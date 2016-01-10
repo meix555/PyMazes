@@ -1,28 +1,31 @@
-import os
 from PyQt5 import QtWidgets, QtGui, uic
+from src.maze.cell import *
+from src.maze.renderer.cellrenderer import *
 
 
 class PyMazesDialog(QtWidgets.QDialog):
     def __init__(self, parent=None):
         super().__init__(parent)
+
         self.ui = uic.loadUi("mazes.ui", self)
         self.ui.drawMazeButton.clicked.connect(self.onDraw)
+        self.ui.widthEdit.setFocus()
 
         self.draw = True
 
         self.pen = QtGui.QPen(QtGui.QColor(0, 0, 0))
-        self.pen.setWidth(3)
-        self.brush = QtGui.QBrush(QtGui.QColor(255, 255, 255))
+        self.pen.setWidth(2)
 
 
     def paintEvent(self, event):
         if self.draw:
             painter = QtGui.QPainter(self)
             painter.setPen(self.pen)
-            painter.setBrush(self.brush)
-            painter.drawRect(10, 70, 130, 130)
 
-            painter.drawLine(10, 150, 100, 150)
+            cellrenderer = CellRenderer(painter, 20, 70)
+
+            for x in range(0, 10):
+                cellrenderer.render(Cell(20, x, 0))
 
 
     def onDraw(self):
