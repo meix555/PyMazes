@@ -1,6 +1,6 @@
 from PyQt5 import QtWidgets, QtGui, uic
-from src.maze.cell import *
-from src.maze.renderer.cellrenderer import *
+from ..maze.maze import Cell, Maze
+from ..maze.renderer.mazerenderer import MazeRenderer
 
 
 class PyMazesDialog(QtWidgets.QDialog):
@@ -11,26 +11,33 @@ class PyMazesDialog(QtWidgets.QDialog):
         self.ui.drawMazeButton.clicked.connect(self.onDraw)
         self.ui.widthEdit.setFocus()
 
-        self.draw = True
+        self.draw = False
 
         self.pen = QtGui.QPen(QtGui.QColor(0, 0, 0))
         self.pen.setWidth(2)
 
+        self.baseX = 20
+        self.baseY = 70
 
     def paintEvent(self, event):
         if self.draw:
-            painter = QtGui.QPainter(self)
-            painter.setPen(self.pen)
-
-            cellrenderer = CellRenderer(painter, 20, 70)
-
-            for x in range(0, 10):
-                cellrenderer.render(Cell(20, x, 0))
-
+            mazerenderer = MazeRenderer(self.get_painter(), self.baseX, self.baseY)
+            mazerenderer.render(self.maze);
 
     def onDraw(self):
+        width = int(self.ui.widthEdit.text())
+        height = int(self.ui.heightEdit.text())
+
+        self.maze = Maze(20, width, height)
+
         index = self.ui.algorithmComboBox.currentIndex()
 
-        self.draw = not self.draw
+        self.draw = True
 
         self.update()
+
+    def get_painter(self):
+        painter = QtGui.QPainter(self)
+        painter.setPen(self.pen)
+
+        return painter

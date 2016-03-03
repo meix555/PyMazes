@@ -1,5 +1,5 @@
-from src.maze.walltype import *
-from src.maze.wallorientation import *
+from ..walltype import *
+from ..wallorientation import *
 
 
 class CellRenderer(object):
@@ -7,7 +7,6 @@ class CellRenderer(object):
         self.painter = painter
         self.base_x = base_x
         self.base_y = base_y
-
 
     def render(self, cell):
 

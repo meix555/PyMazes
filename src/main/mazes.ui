@@ -60,6 +60,9 @@
       <height>20</height>
      </rect>
     </property>
+    <property name="text">
+     <string>15</string>
+    </property>
    </widget>
    <widget class="QLineEdit" name="heightEdit">
     <property name="geometry">
@@ -69,6 +72,9 @@
       <width>51</width>
       <height>20</height>
      </rect>
+    </property>
+    <property name="text">
+     <string>10</string>
     </property>
    </widget>
    <widget class="QComboBox" name="algorithmComboBox">
@@ -82,12 +88,12 @@
     </property>
     <item>
      <property name="text">
-      <string>HUgi</string>
+      <string>Binary Tree</string>
      </property>
     </item>
     <item>
      <property name="text">
-      <string>wIULLI</string>
+      <string>Stay tuned...</string>
      </property>
     </item>
    </widget>

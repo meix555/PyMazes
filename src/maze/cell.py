@@ -1,5 +1,5 @@
-from src.maze.walltype import *
-from src.maze.wallorientation import *
+from .walltype import *
+from .wallorientation import *
 
 
 class Cell(object):
@@ -12,5 +12,3 @@ class Cell(object):
 
         self.walltypes = {WallOrientation.NORTH: WallType.WALL, WallOrientation.EAST: WallType.WALL,
                           WallOrientation.SOUTH: WallType.WALL, WallOrientation.WEST: WallType.WALL}
-
-        self.Matrix = [[(y, x) for x in range(5)] for y in range(5)]
