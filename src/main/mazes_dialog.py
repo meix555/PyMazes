@@ -25,10 +25,12 @@ class PyMazesDialog(QtWidgets.QDialog):
 
         self.factories = self.create_factorylist()
 
+
     def paintEvent(self, event):
         if self.draw:
             mazerenderer = MazeRenderer(self.get_painter(), self.base_x, self.base_y)
             mazerenderer.render(self.maze);
+
 
     def onDraw(self):
         width = int(self.ui.widthEdit.text())
@@ -43,11 +45,13 @@ class PyMazesDialog(QtWidgets.QDialog):
 
         self.update()
 
+
     def get_painter(self):
         painter = QtGui.QPainter(self)
         painter.setPen(self.pen)
 
         return painter
+
 
     def create_factorylist(self):
         factories = [MazeFactoryBinaryTree(), MazeFactorySidewinder(), MazeFactoryAldousBroder(),

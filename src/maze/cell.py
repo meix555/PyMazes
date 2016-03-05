@@ -13,5 +13,6 @@ class Cell(object):
         self.walltypes = {WallOrientation.NORTH: WallType.WALL, WallOrientation.EAST: WallType.WALL,
                           WallOrientation.SOUTH: WallType.WALL, WallOrientation.WEST: WallType.WALL}
 
+
     def set_walltype(self, orientation, walltype):
         self.walltypes[orientation] = walltype

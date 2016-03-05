@@ -2,17 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="90ebcf24-5f1d-44cd-9835-78940a8327ac" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/codeStyleSettings.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/mazes_dialog.py" afterPath="$PROJECT_DIR$/src/main/mazes_dialog.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/maze/cell.py" afterPath="$PROJECT_DIR$/src/maze/cell.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/maze/factory/abstractmazefactory.py" afterPath="$PROJECT_DIR$/src/maze/factory/abstractmazefactory.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/maze/factory/mazefactory_aldousbroder.py" afterPath="$PROJECT_DIR$/src/maze/factory/mazefactory_aldousbroder.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/maze/factory/mazefactory_binarytree.py" afterPath="$PROJECT_DIR$/src/maze/factory/mazefactory_binarytree.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/maze/factory/mazefactory_sidewinder.py" afterPath="$PROJECT_DIR$/src/maze/factory/mazefactory_sidewinder.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/maze/factory/mazefactory_wilson.py" afterPath="$PROJECT_DIR$/src/maze/factory/mazefactory_wilson.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/maze/maze.py" afterPath="$PROJECT_DIR$/src/maze/maze.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/maze/mazehelper.py" afterPath="$PROJECT_DIR$/src/maze/mazehelper.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/maze/renderer/mazerenderer.py" afterPath="$PROJECT_DIR$/src/maze/renderer/mazerenderer.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/maze/renderer/cellrenderer.py" afterPath="$PROJECT_DIR$/src/maze/renderer/cellrenderer.py" />
     </list>
     <ignored path="PyMazes.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -33,11 +31,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="mazes_dialog.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="mazes_dialog.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/mazes_dialog.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="36" column="0" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.9269663">
+              <caret line="44" column="0" selection-start-line="44" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
               </folding>
@@ -45,21 +43,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="mazerenderer.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/maze/renderer/mazerenderer.py">
+      <file leaf-file-name="mazefactory_wilson.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/maze/factory/mazefactory_wilson.py">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="4" column="44" selection-start-line="4" selection-start-column="44" selection-end-line="4" selection-end-column="44" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="maze.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/maze/maze.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="5" column="8" selection-start-line="5" selection-start-column="8" selection-end-line="5" selection-end-column="8" />
+              <caret line="1" column="55" selection-start-line="1" selection-start-column="55" selection-end-line="1" selection-end-column="55" />
               <folding />
             </state>
           </provider>
@@ -77,11 +65,31 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="wallorientation.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/maze/wallorientation.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="6" column="4" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="4" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="walltype.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/maze/walltype.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="3" column="6" selection-start-line="3" selection-start-column="6" selection-end-line="3" selection-end-column="6" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="cell.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/maze/cell.py">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="16" column="15" selection-start-line="16" selection-start-column="15" selection-end-line="16" selection-end-column="15" />
+              <caret line="17" column="15" selection-start-line="17" selection-start-column="15" selection-end-line="17" selection-end-column="15" />
               <folding>
                 <element signature="e#0#23#0" expanded="true" />
               </folding>
@@ -89,11 +97,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="mazefactory_binarytree.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="maze.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/maze/maze.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="5" column="8" selection-start-line="5" selection-start-column="8" selection-end-line="5" selection-end-column="8" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="mazefactory_binarytree.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/maze/factory/mazefactory_binarytree.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.4002809">
-              <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="33" column="0" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
               <folding>
                 <element signature="e#0#20#0" expanded="true" />
               </folding>
@@ -105,10 +123,20 @@
         <entry file="file://$PROJECT_DIR$/src/maze/renderer/cellrenderer.py">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+              <caret line="5" column="48" selection-start-line="5" selection-start-column="48" selection-end-line="5" selection-end-column="48" />
               <folding>
                 <element signature="e#0#24#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="mazerenderer.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/maze/renderer/mazerenderer.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="4" column="44" selection-start-line="4" selection-start-column="44" selection-end-line="4" selection-end-column="44" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -130,21 +158,21 @@
       <list>
         <option value="$PROJECT_DIR$/src/dialog/mazes_dialog.py" />
         <option value="$PROJECT_DIR$/src/maze/wallorientation.py" />
-        <option value="$PROJECT_DIR$/src/maze/walltype.py" />
         <option value="$PROJECT_DIR$/src/algorithm/mazealgorithm.py" />
         <option value="$PROJECT_DIR$/src/algorithm/mazealgorithmtype.py" />
-        <option value="$PROJECT_DIR$/src/maze/renderer/cellrenderer.py" />
         <option value="$PROJECT_DIR$/src/main/start.py" />
-        <option value="$PROJECT_DIR$/src/maze/maze.py" />
-        <option value="$PROJECT_DIR$/src/maze/cell.py" />
-        <option value="$PROJECT_DIR$/src/maze/factory/abstractmazefactory.py" />
         <option value="$PROJECT_DIR$/src/maze/factory/mazefactory_sidewinder.py" />
         <option value="$PROJECT_DIR$/src/maze/factory/mazefactory_aldousbroder.py" />
-        <option value="$PROJECT_DIR$/src/maze/factory/mazefactory_wilson.py" />
-        <option value="$PROJECT_DIR$/src/main/mazes_dialog.py" />
         <option value="$PROJECT_DIR$/src/maze/renderer/mazerenderer.py" />
-        <option value="$PROJECT_DIR$/src/maze/mazehelper.py" />
+        <option value="$PROJECT_DIR$/src/maze/factory/abstractmazefactory.py" />
         <option value="$PROJECT_DIR$/src/maze/factory/mazefactory_binarytree.py" />
+        <option value="$PROJECT_DIR$/src/maze/maze.py" />
+        <option value="$PROJECT_DIR$/src/maze/cell.py" />
+        <option value="$PROJECT_DIR$/src/maze/walltype.py" />
+        <option value="$PROJECT_DIR$/src/maze/mazehelper.py" />
+        <option value="$PROJECT_DIR$/src/maze/factory/mazefactory_wilson.py" />
+        <option value="$PROJECT_DIR$/src/maze/renderer/cellrenderer.py" />
+        <option value="$PROJECT_DIR$/src/main/mazes_dialog.py" />
       </list>
     </option>
   </component>
@@ -316,7 +344,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.Python" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="full.screen.before.presentation.mode" value="false" />
   </component>
@@ -525,7 +553,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32998884" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20578778" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20578778" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -574,7 +602,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="python-line">
           <url>file://$PROJECT_DIR$/src/maze/renderer/cellrenderer.py</url>
-          <line>12</line>
+          <line>13</line>
           <option name="timeStamp" value="20" />
         </line-breakpoint>
       </breakpoints>
@@ -876,14 +904,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/maze/wallorientation.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="6" column="4" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/algorithm/mazealgorithmtype.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -895,22 +915,14 @@
     <entry file="file://$PROJECT_DIR$/src/maze/factory/abstractmazefactory.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="2" column="36" selection-start-line="2" selection-start-column="36" selection-end-line="2" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/maze/factory/mazefactory_wilson.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.01659292">
-          <caret line="1" column="55" selection-start-line="1" selection-start-column="55" selection-end-line="1" selection-end-column="55" />
+          <caret line="2" column="20" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="60" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/maze/factory/mazefactory_aldousbroder.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.01659292">
+        <state vertical-scroll-proportion="0.0">
           <caret line="1" column="32" selection-start-line="1" selection-start-column="32" selection-end-line="1" selection-end-column="32" />
           <folding />
         </state>
@@ -918,16 +930,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/maze/factory/mazefactory_sidewinder.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.01659292">
-          <caret line="1" column="55" selection-start-line="1" selection-start-column="55" selection-end-line="1" selection-end-column="55" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/maze/walltype.py">
-      <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="3" column="6" selection-start-line="3" selection-start-column="6" selection-end-line="3" selection-end-column="6" />
+          <caret line="1" column="55" selection-start-line="1" selection-start-column="55" selection-end-line="1" selection-end-column="55" />
           <folding />
         </state>
       </provider>
@@ -948,33 +952,29 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/mazes_dialog.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="36" column="0" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/maze/cell.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="16" column="15" selection-start-line="16" selection-start-column="15" selection-end-line="16" selection-end-column="15" />
+          <caret line="17" column="15" selection-start-line="17" selection-start-column="15" selection-end-line="17" selection-end-column="15" />
           <folding>
             <element signature="e#0#23#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/maze/renderer/cellrenderer.py">
+    <entry file="file://$PROJECT_DIR$/src/maze/walltype.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#24#0" expanded="true" />
-          </folding>
+          <caret line="3" column="6" selection-start-line="3" selection-start-column="6" selection-end-line="3" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/maze/wallorientation.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="6" column="4" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="4" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -988,12 +988,40 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/maze/factory/mazefactory_wilson.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="1" column="55" selection-start-line="1" selection-start-column="55" selection-end-line="1" selection-end-column="55" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/maze/factory/mazefactory_binarytree.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4002809">
-          <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="33" column="0" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
           <folding>
             <element signature="e#0#20#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/maze/renderer/cellrenderer.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="5" column="48" selection-start-line="5" selection-start-column="48" selection-end-line="5" selection-end-column="48" />
+          <folding>
+            <element signature="e#0#24#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/mazes_dialog.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.9269663">
+          <caret line="44" column="0" selection-start-line="44" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
           </folding>
         </state>
       </provider>

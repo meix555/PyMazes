@@ -8,6 +8,7 @@ class CellRenderer(object):
         self.base_x = base_x
         self.base_y = base_y
 
+
     def render(self, cell):
 
         cell_base_x = self.base_x + cell.col_idx * cell.size
