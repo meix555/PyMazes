@@ -2,11 +2,11 @@ from .cellrenderer import CellRenderer
 
 
 class MazeRenderer(object):
-    def __init__(self, painter, baseX, baseY):
-        self.cellrenderer = CellRenderer(painter, baseX, baseY)
+    def __init__(self, painter, base_x, base_y):
+        self.cellrenderer = CellRenderer(painter, base_x, base_y)
 
     def render(self, maze):
 
-        for colIdx in range(0, maze.mazeWidth):
-            for rowIdx in range(0, maze.mazeHeight):
-                self.cellrenderer.render(maze.cells[colIdx][rowIdx])
+        for col_idx in range(0, maze.maze_width):
+            for row_idx in range(0, maze.maze_height):
+                self.cellrenderer.render(maze.cells[col_idx][row_idx])

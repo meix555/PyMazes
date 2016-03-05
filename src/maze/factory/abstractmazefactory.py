@@ -1,4 +1,4 @@
 class AbstractMazeFactory(object):
 
-    def create_maze(self, cellSize, baseX, baseY, mazeWidth, mazeHeight):
+    def create_maze(self, cellSize, mazeWidth, mazeHeight):
          raise NotImplementedError( "Should have implemented this" )
