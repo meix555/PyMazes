@@ -93,7 +93,17 @@
     </item>
     <item>
      <property name="text">
-      <string>Stay tuned...</string>
+      <string>Sidewinder</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Aldous-Broder</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Wilson</string>
      </property>
     </item>
    </widget>
