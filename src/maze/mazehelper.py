@@ -1,5 +1,6 @@
 from .walltype import *
 from .wallorientation import *
+import random
 
 
 class MazeHelper(object):
@@ -22,3 +23,33 @@ class MazeHelper(object):
         if orientation == WallOrientation.WEST:
             if col_idx > 0:
                 maze.cells[col_idx - 1][row_idx].set_walltype(WallOrientation.EAST, WallType.OPEN)
+
+
+    @staticmethod
+    def get_randomcell(maze):
+        return maze.cells[random.randint(0, maze.maze_width - 1)][random.randint(0, maze.maze_height - 1)]
+
+
+    @staticmethod
+    def get_cellcount(maze):
+        return maze.maze_width * maze.maze_height
+
+
+    @staticmethod
+    def get_neighbourcells(maze, cell):
+
+        dict = {}
+
+        if cell.row_idx < maze.maze_height - 1:
+            dict[WallOrientation.SOUTH] = maze.cells[cell.col_idx][cell.row_idx + 1]
+
+        if cell.row_idx > 0:
+            dict[WallOrientation.NORTH] = maze.cells[cell.col_idx][cell.row_idx - 1]
+
+        if cell.col_idx < maze.maze_width - 1:
+            dict[WallOrientation.EAST] = maze.cells[cell.col_idx + 1][cell.row_idx]
+
+        if cell.col_idx > 0:
+            dict[WallOrientation.WEST] = maze.cells[cell.col_idx - 1][cell.row_idx]
+
+        return dict
