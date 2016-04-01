@@ -16,3 +16,7 @@ class Cell(object):
 
     def set_walltype(self, orientation, walltype):
         self.walltypes[orientation] = walltype
+
+
+    def is_same_position(self, othercell):
+        return self.col_idx == othercell.col_idx and self.row_idx == othercell.row_idx

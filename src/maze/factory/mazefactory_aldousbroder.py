@@ -19,7 +19,7 @@ class MazeFactoryAldousBroder(object):
 
         while num_visited_cells < MazeHelper.get_cellcount(maze):
             # choose neighbour cell randomly
-            neighbour_cells = MazeHelper.get_neighbourcells(maze, current_cell)
+            neighbour_cells = MazeHelper.get_neighbourcells_dict(maze, current_cell)
 
             random_orientation = random.choice(list(neighbour_cells.keys()))
             next_cell = neighbour_cells[random_orientation]

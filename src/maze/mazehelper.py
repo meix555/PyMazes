@@ -36,20 +36,64 @@ class MazeHelper(object):
 
 
     @staticmethod
-    def get_neighbourcells(maze, cell):
+    def get_neighbourcells_dict(maze, cell):
 
-        dict = {}
+        cells = {}
 
         if cell.row_idx < maze.maze_height - 1:
-            dict[WallOrientation.SOUTH] = maze.cells[cell.col_idx][cell.row_idx + 1]
+            cells[WallOrientation.SOUTH] = maze.cells[cell.col_idx][cell.row_idx + 1]
 
         if cell.row_idx > 0:
-            dict[WallOrientation.NORTH] = maze.cells[cell.col_idx][cell.row_idx - 1]
+            cells[WallOrientation.NORTH] = maze.cells[cell.col_idx][cell.row_idx - 1]
 
         if cell.col_idx < maze.maze_width - 1:
-            dict[WallOrientation.EAST] = maze.cells[cell.col_idx + 1][cell.row_idx]
+            cells[WallOrientation.EAST] = maze.cells[cell.col_idx + 1][cell.row_idx]
 
         if cell.col_idx > 0:
-            dict[WallOrientation.WEST] = maze.cells[cell.col_idx - 1][cell.row_idx]
+            cells[WallOrientation.WEST] = maze.cells[cell.col_idx - 1][cell.row_idx]
 
-        return dict
+        return cells
+
+
+    @staticmethod
+    def get_neighbourcells_list(maze, cell):
+
+        cells = []
+
+        if cell.row_idx < maze.maze_height - 1:
+            cells.append(maze.cells[cell.col_idx][cell.row_idx + 1])
+
+        if cell.row_idx > 0:
+            cells.append(maze.cells[cell.col_idx][cell.row_idx - 1])
+
+        if cell.col_idx < maze.maze_width - 1:
+            cells.append(maze.cells[cell.col_idx + 1][cell.row_idx])
+
+        if cell.col_idx > 0:
+            cells.append(maze.cells[cell.col_idx - 1][cell.row_idx])
+
+        return cells
+
+
+    @staticmethod
+    def get_random_neighbourcell(maze, cell):
+        neighbourcells = MazeHelper.get_neighbourcells_list(maze, cell)
+
+        return neighbourcells[random.randint(0, len(neighbourcells) - 1)]
+
+
+    @staticmethod
+    def get_wall_orientation(cell, neighbourcell):
+
+        orientation = None
+
+        if cell.col_idx + 1 == neighbourcell.col_idx:
+            orientation = WallOrientation.EAST
+        elif cell.col_idx - 1 == neighbourcell.col_idx:
+            orientation = WallOrientation.WEST
+        elif cell.row_idx + 1 == neighbourcell.row_idx:
+            orientation = WallOrientation.SOUTH
+        elif cell.row_idx - 1 == neighbourcell.row_idx:
+            orientation = WallOrientation.NORTH
+
+        return orientation
