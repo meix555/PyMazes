@@ -97,3 +97,16 @@ class MazeHelper(object):
             orientation = WallOrientation.NORTH
 
         return orientation
+
+
+    @staticmethod
+    def find_random_unvisited_cell(maze, visited):
+        cell = None
+
+        found = False
+
+        while not found:
+            cell = MazeHelper.get_randomcell(maze)
+            found = not visited[cell.col_idx][cell.row_idx]
+
+        return cell

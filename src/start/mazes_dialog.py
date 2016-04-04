@@ -1,10 +1,11 @@
 from PyQt5 import QtWidgets, QtGui, uic
-from ..maze.maze import Cell, Maze
-from ..maze.renderer.mazerenderer import MazeRenderer
-from ..maze.factory.mazefactory_binarytree import MazeFactoryBinaryTree
-from ..maze.factory.mazefactory_sidewinder import MazeFactorySidewinder
-from ..maze.factory.mazefactory_aldousbroder import MazeFactoryAldousBroder
-from ..maze.factory.mazefactory_wilson import MazeFactoryWilson
+from src.maze.factory.mazefactory_binarytree import MazeFactoryBinaryTree
+from src.maze.factory.mazefactory_sidewinder import MazeFactorySidewinder
+from src.maze.factory.mazefactory_aldousbroder import MazeFactoryAldousBroder
+from src.maze.factory.mazefactory_wilson import MazeFactoryWilson
+from src.maze.factory.mazefactory_huntandkill import MazeFactoryHuntAndKill
+from src.maze.renderer.mazerenderer import MazeRenderer
+
 
 
 class PyMazesDialog(QtWidgets.QDialog):
@@ -55,6 +56,6 @@ class PyMazesDialog(QtWidgets.QDialog):
 
     def create_factorylist(self):
         factories = [MazeFactoryBinaryTree(), MazeFactorySidewinder(), MazeFactoryAldousBroder(),
-                     MazeFactoryWilson()]
+                     MazeFactoryWilson(), MazeFactoryHuntAndKill()]
 
         return factories

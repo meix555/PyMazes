@@ -21,7 +21,7 @@ class MazeFactoryWilson(object):
                         range(maze_width)]
 
         # get initial cell
-        current_cell = self.find_random_unvisited_cell(maze)
+        current_cell = MazeHelper.find_random_unvisited_cell(maze, self.visited)
         self.visited[current_cell.col_idx][current_cell.row_idx] = True
 
         self.num_visitedcells = 1
@@ -30,7 +30,7 @@ class MazeFactoryWilson(object):
             self.path = []
 
             # select an unvisited cell
-            current_cell = self.find_random_unvisited_cell(maze)
+            current_cell = MazeHelper.find_random_unvisited_cell(maze, self.visited)
             self.path.append(current_cell)
 
             self.path_complete = False
@@ -73,18 +73,6 @@ class MazeFactoryWilson(object):
             self.visited[cell_0.col_idx][cell_0.row_idx] = True
 
             self.num_visitedcells += 1
-
-
-    def find_random_unvisited_cell(self, maze):
-        cell = None
-
-        found = False
-
-        while not found:
-            cell = MazeHelper.get_randomcell(maze)
-            found = not self.visited[cell.col_idx][cell.row_idx]
-
-        return cell
 
 
     def find_cell_in_path(self, cell):
