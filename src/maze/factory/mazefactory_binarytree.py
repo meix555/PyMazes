@@ -1,10 +1,11 @@
+from src.maze.factory.abstractmazefactory import AbstractMazeFactory
 from ..maze import *
 from ..mazehelper import *
 from ..wallorientation import *
 import random
 
 
-class MazeFactoryBinaryTree(object):
+class MazeFactoryBinaryTree(AbstractMazeFactory):
     def create_maze(self, cell_size, maze_width, maze_height):
 
         random.seed()

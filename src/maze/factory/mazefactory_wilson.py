@@ -1,10 +1,11 @@
+from src.maze.factory.abstractmazefactory import AbstractMazeFactory
 from ..maze import *
 from ..mazehelper import *
 from ..wallorientation import *
 import random
 
 
-class MazeFactoryWilson(object):
+class MazeFactoryWilson(AbstractMazeFactory):
     def __init__(self):
         self.path = []
         self.path_complete = False

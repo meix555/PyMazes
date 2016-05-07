@@ -26,6 +26,12 @@ class MazeHelper(object):
 
 
     @staticmethod
+    def erase_wall_between_cells(maze, cell1, cell2):
+        orientation = MazeHelper.get_wall_orientation(cell1, cell2)
+        MazeHelper.erase_wall(maze, cell1.col_idx, cell1.row_idx, orientation)
+
+
+    @staticmethod
     def get_randomcell(maze):
         return maze.cells[random.randint(0, maze.maze_width - 1)][random.randint(0, maze.maze_height - 1)]
 
@@ -80,6 +86,32 @@ class MazeHelper(object):
         neighbourcells = MazeHelper.get_neighbourcells_list(maze, cell)
 
         return neighbourcells[random.randint(0, len(neighbourcells) - 1)]
+
+
+    @staticmethod
+    def get_unvisited_random_neighbourcell(maze, cell, visited):
+        neighbourcells = MazeHelper.get_neighbourcells_list(maze, cell)
+
+        unvisitedcells = [cell for cell in neighbourcells if not visited[cell.col_idx][cell.row_idx]]
+
+        if unvisitedcells:
+            random.seed()
+            return unvisitedcells[random.randint(0, len(unvisitedcells) - 1)]
+        else:
+            return None
+
+
+    @staticmethod
+    def get_visited_random_neighbourcell(maze, cell, visited):
+        neighbourcells = MazeHelper.get_neighbourcells_list(maze, cell)
+
+        visitedcells = [cell for cell in neighbourcells if visited[cell.col_idx][cell.row_idx]]
+
+        if visitedcells:
+            random.seed()
+            return visitedcells[random.randint(0, len(visitedcells) - 1)]
+        else:
+            return None
 
 
     @staticmethod
