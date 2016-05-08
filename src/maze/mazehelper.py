@@ -1,6 +1,7 @@
+import random
+
 from .walltype import *
 from .wallorientation import *
-import random
 
 
 class MazeHelper(object):
