@@ -6,10 +6,12 @@ import random
 
 
 class MazeFactoryAldousBroder(AbstractMazeFactory):
-    def create_maze(self, cell_size, maze_width, maze_height):
+    def create_maze(self, cell_size:int, maze_width:int, maze_height:int, mask_filename:str = None):
         random.seed()
 
         maze = Maze(cell_size, maze_width, maze_height)
+
+
 
         visited = [[False for row_idx in range(maze_height)] for col_idx in
                    range(maze_width)]

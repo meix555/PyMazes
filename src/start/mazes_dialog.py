@@ -21,6 +21,8 @@ class PyMazesDialog(QtWidgets.QDialog):
         self.pen = QtGui.QPen(QtGui.QColor(0, 0, 0))
         self.pen.setWidth(2)
 
+        self.brush = QtGui.QBrush(QtGui.QColor(150, 150, 150))
+
         self.base_x = 20
         self.base_y = 70
 
@@ -40,7 +42,10 @@ class PyMazesDialog(QtWidgets.QDialog):
         index = self.ui.algorithmComboBox.currentIndex()
         mazefactory = self.factories[index]
 
-        self.maze = mazefactory.create_maze(20, width, height)
+        if type(mazefactory) is MazeFactoryHuntAndKill:
+            self.maze = mazefactory.create_maze(20, width, height, 'huntAndKill.txt')
+        else:
+            self.maze = mazefactory.create_maze(20, width, height)
 
         self.draw = True
 
@@ -50,6 +55,7 @@ class PyMazesDialog(QtWidgets.QDialog):
     def get_painter(self):
         painter = QtGui.QPainter(self)
         painter.setPen(self.pen)
+        painter.setBrush(self.brush)
 
         return painter
 

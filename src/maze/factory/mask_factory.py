@@ -2,20 +2,22 @@ from src.maze.maze import Maze
 
 
 class MaskFactory(object):
-    @staticmethod
-    def create_mask(filename: str):
-        mask = []
+    @classmethod
+    def _create_mask(cls, filename: str):
 
-        f = open(filename, 'r')
+        mask = None
 
-        for line in f:
-            mask.append([c == '1' for c in line[:-1]])
+        if filename:
+            mask = []
+            f = open(filename, 'r')
+            for line in f:
+                mask.append([c == '1' for c in line[:-1]])
 
         return mask
 
 
-    @staticmethod
-    def mask_maze(maze: Maze, mask: list):
+    @classmethod
+    def _mask_maze(cls, maze: Maze, mask: list):
 
         if len(maze.cells) != len(mask):
             raise ValueError('maze and mask must have equal length.')
@@ -26,3 +28,9 @@ class MaskFactory(object):
                 maze.cells[col_idx][row_idx].masked = row[col_idx]
 
         return maze
+
+
+    @classmethod
+    def mask_maze(cls, maze: Maze, filename:str):
+        mask = cls._create_mask(filename)
+        return cls._mask_maze(maze, mask) if mask else maze

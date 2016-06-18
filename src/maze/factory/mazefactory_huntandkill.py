@@ -1,15 +1,18 @@
 import random
 
+from src.maze.factory.mask_factory import MaskFactory
 from .abstractmazefactory import AbstractMazeFactory
 from ..maze import *
 from ..mazehelper import *
 
 
 class MazeFactoryHuntAndKill(AbstractMazeFactory):
-    def create_maze(self, cell_size, maze_width, maze_height):
+    def create_maze(self, cell_size:int, maze_width:int, maze_height:int, mask_filename:str = None):
         random.seed()
 
         self.maze = Maze(cell_size, maze_width, maze_height)
+
+        self.maze = MaskFactory.mask_maze(self.maze, mask_filename)
 
         self.visited = [[False for row_idx in range(maze_height)] for col_idx in
                         range(maze_width)]
@@ -58,7 +61,7 @@ class MazeFactoryHuntAndKill(AbstractMazeFactory):
 
                     test_cell = self.maze.cells[col_idx][row_idx]
 
-                    if self.visited[test_cell.col_idx][test_cell.row_idx]:
+                    if self.visited[test_cell.col_idx][test_cell.row_idx] or test_cell.masked:
                         continue
 
                     visited_neighbour_cell = MazeHelper.get_visited_random_neighbourcell(self.maze, test_cell,
