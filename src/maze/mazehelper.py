@@ -32,9 +32,19 @@ class MazeHelper(object):
         MazeHelper.erase_wall(maze, cell1.col_idx, cell1.row_idx, orientation)
 
 
+    # masking! => OK
     @staticmethod
     def get_randomcell(maze):
-        return maze.cells[random.randint(0, maze.maze_width - 1)][random.randint(0, maze.maze_height - 1)]
+
+        cell = None
+
+        found = False
+
+        while not found:
+            cell = maze.cells[random.randint(0, maze.maze_width - 1)][random.randint(0, maze.maze_height - 1)]
+            found = not cell.masked
+
+        return cell
 
 
     @staticmethod
@@ -42,6 +52,7 @@ class MazeHelper(object):
         return maze.maze_width * maze.maze_height
 
 
+    # masking!
     @staticmethod
     def get_neighbourcells_dict(maze, cell):
 
@@ -62,6 +73,7 @@ class MazeHelper(object):
         return cells
 
 
+    # masking!
     @staticmethod
     def get_neighbourcells_list(maze, cell):
 
@@ -79,9 +91,12 @@ class MazeHelper(object):
         if cell.col_idx > 0:
             cells.append(maze.cells[cell.col_idx - 1][cell.row_idx])
 
-        return cells
+        unmasked_cells = [cell for cell in cells if not cell.masked]
+
+        return unmasked_cells
 
 
+    # masking nicht nötig!
     @staticmethod
     def get_random_neighbourcell(maze, cell):
         neighbourcells = MazeHelper.get_neighbourcells_list(maze, cell)
@@ -89,6 +104,7 @@ class MazeHelper(object):
         return neighbourcells[random.randint(0, len(neighbourcells) - 1)]
 
 
+    # masking nicht nötig!
     @staticmethod
     def get_unvisited_random_neighbourcell(maze, cell, visited):
         neighbourcells = MazeHelper.get_neighbourcells_list(maze, cell)
@@ -102,6 +118,7 @@ class MazeHelper(object):
             return None
 
 
+    # masking nicht nötig!
     @staticmethod
     def get_visited_random_neighbourcell(maze, cell, visited):
         neighbourcells = MazeHelper.get_neighbourcells_list(maze, cell)
@@ -132,6 +149,7 @@ class MazeHelper(object):
         return orientation
 
 
+    # masking nicht nötig!
     @staticmethod
     def find_random_unvisited_cell(maze, visited):
         cell = None
