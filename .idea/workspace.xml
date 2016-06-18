@@ -2,9 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="90ebcf24-5f1d-44cd-9835-78940a8327ac" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/maze/factory/mask01.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/maze/factory/mask_factory.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/mask_factory_test.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/resources/mask01.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/resources/mask02.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/maze/factory/mazefactory_huntandkill.py" afterPath="$PROJECT_DIR$/src/maze/factory/mazefactory_huntandkill.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/maze/mazehelper.py" afterPath="$PROJECT_DIR$/src/maze/mazehelper.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/maze/cell.py" afterPath="$PROJECT_DIR$/src/maze/cell.py" />
     </list>
     <ignored path="PyMazes.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -25,14 +29,56 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="mazefactory_huntandkill.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="mazefactory_huntandkill.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/maze/factory/mazefactory_huntandkill.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.8207885">
+            <state vertical-scroll-proportion="0.0">
               <caret line="72" column="20" selection-start-line="72" selection-start-column="20" selection-end-line="72" selection-end-column="20" />
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="mask_factory.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/maze/factory/mask_factory.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.685155">
+              <caret line="28" column="0" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="mask_factory_test.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/mask_factory_test.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="32" column="0" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
+              <folding>
+                <element signature="e#0#29#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="mask01.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/resources/mask01.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="1" column="2" selection-start-line="1" selection-start-column="2" selection-end-line="1" selection-end-column="2" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="mask02.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/resources/mask02.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -44,18 +90,6 @@
               <caret line="98" column="25" selection-start-line="98" selection-start-column="25" selection-end-line="98" selection-end-column="25" />
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="mazefactory_binarytree.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/maze/factory/mazefactory_binarytree.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="7" column="47" selection-start-line="7" selection-start-column="28" selection-end-line="7" selection-end-column="47" />
-              <folding>
-                <element signature="e#0#68#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -99,7 +133,6 @@
         <option value="$PROJECT_DIR$/src/main/mazes_dialog.py" />
         <option value="$PROJECT_DIR$/src/maze/wallorientation.py" />
         <option value="$PROJECT_DIR$/src/maze/factory/abstractmazefactory.py" />
-        <option value="$PROJECT_DIR$/src/maze/cell.py" />
         <option value="$PROJECT_DIR$/src/python/main/mazes_dialog.py" />
         <option value="$PROJECT_DIR$/src/test/python/maze/mazehelper_test.py" />
         <option value="$PROJECT_DIR$/src/main/python/maze/mazehelper.py" />
@@ -116,6 +149,13 @@
         <option value="$PROJECT_DIR$/src/maze/factory/mazefactory_wilson.py" />
         <option value="$PROJECT_DIR$/src/maze/mazehelper.py" />
         <option value="$PROJECT_DIR$/src/maze/factory/mazefactory_huntandkill.py" />
+        <option value="$PROJECT_DIR$/src/maze/factory/mask01.txt" />
+        <option value="$PROJECT_DIR$/src/test/mask01.txt" />
+        <option value="$PROJECT_DIR$/src/maze/cell.py" />
+        <option value="$PROJECT_DIR$/src/test/resources/mask01.txt" />
+        <option value="$PROJECT_DIR$/src/test/resources/mask02.txt" />
+        <option value="$PROJECT_DIR$/src/maze/factory/mask_factory.py" />
+        <option value="$PROJECT_DIR$/src/test/mask_factory_test.py" />
       </list>
     </option>
   </component>
@@ -149,6 +189,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -213,7 +254,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="start" />
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -257,27 +302,8 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PyMazes" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PyMazes" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="algorithm" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
       <pane id="Scope">
         <subPane subId="Project Files">
           <PATH>
@@ -291,20 +317,24 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="editor.preferences.appearance" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="full.screen.before.presentation.mode" value="false" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/test/resources" />
+      <recent name="$PROJECT_DIR$/src/test" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/test/resources" />
+      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/src/test" />
       <recent name="$PROJECT_DIR$/src" />
       <recent name="$PROJECT_DIR$/src/main/python/main" />
-      <recent name="$PROJECT_DIR$" />
-      <recent name="$PROJECT_DIR$/src/main" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.__init__ ">
+  <component name="RunManager" selected="Python tests.Unittests in TestMaskFactory">
     <configuration default="false" name="__init__ " type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -322,18 +352,18 @@
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
     </configuration>
-    <configuration default="false" name="Unittests in MazeHelperTest" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+    <configuration default="false" name="Unittests in TestMaskFactory" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs />
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/test/python/maze" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/test" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="PyMazes" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/test/mazehelper_test.py" />
-      <option name="CLASS_NAME" value="MazeHelperTest" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/test/mask_factory_test.py" />
+      <option name="CLASS_NAME" value="TestMaskFactory" />
       <option name="METHOD_NAME" value="" />
       <option name="FOLDER_NAME" value="" />
       <option name="TEST_TYPE" value="TEST_CLASS" />
@@ -344,19 +374,63 @@
       <option name="USE_PARAM" value="false" />
       <method />
     </configuration>
-    <configuration default="false" name="Unittest MazeHelperTest.test_cellcount" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+    <configuration default="false" name="Unittest TestMaskFactory.test_mask_factory_reads_file" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs />
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/test/python/maze" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/test" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="PyMazes" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/test/mazehelper_test.py" />
-      <option name="CLASS_NAME" value="MazeHelperTest" />
-      <option name="METHOD_NAME" value="test_cellcount" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/test/mask_factory_test.py" />
+      <option name="CLASS_NAME" value="TestMaskFactory" />
+      <option name="METHOD_NAME" value="test_mask_factory_reads_file" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_METHOD" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="PUREUNITTEST" value="true" />
+      <option name="PARAMS" value="" />
+      <option name="USE_PARAM" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="Unittest TestMaskFactory.test_mask_maze_raises_error_when_different_length" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/test" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="PyMazes" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/test/mask_factory_test.py" />
+      <option name="CLASS_NAME" value="TestMaskFactory" />
+      <option name="METHOD_NAME" value="test_mask_maze_raises_error_when_different_length" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_METHOD" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="PUREUNITTEST" value="true" />
+      <option name="PARAMS" value="" />
+      <option name="USE_PARAM" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="Unittest TestMaskFactory.test_mask_maze_masks_maze_correctly" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/test" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="PyMazes" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/test/mask_factory_test.py" />
+      <option name="CLASS_NAME" value="TestMaskFactory" />
+      <option name="METHOD_NAME" value="test_mask_maze_masks_maze_correctly" />
       <option name="FOLDER_NAME" value="" />
       <option name="TEST_TYPE" value="TEST_METHOD" />
       <option name="PATTERN" value="" />
@@ -488,16 +562,20 @@
       <option name="USE_KEYWORD" value="false" />
       <method />
     </configuration>
-    <list size="3">
+    <list size="5">
       <item index="0" class="java.lang.String" itemvalue="Python.__init__ " />
-      <item index="1" class="java.lang.String" itemvalue="Python tests.Unittests in MazeHelperTest" />
-      <item index="2" class="java.lang.String" itemvalue="Python tests.Unittest MazeHelperTest.test_cellcount" />
+      <item index="1" class="java.lang.String" itemvalue="Python tests.Unittests in TestMaskFactory" />
+      <item index="2" class="java.lang.String" itemvalue="Python tests.Unittest TestMaskFactory.test_mask_factory_reads_file" />
+      <item index="3" class="java.lang.String" itemvalue="Python tests.Unittest TestMaskFactory.test_mask_maze_raises_error_when_different_length" />
+      <item index="4" class="java.lang.String" itemvalue="Python tests.Unittest TestMaskFactory.test_mask_maze_masks_maze_correctly" />
     </list>
     <recent_temporary>
-      <list size="3">
-        <item index="0" class="java.lang.String" itemvalue="Python.__init__ " />
-        <item index="1" class="java.lang.String" itemvalue="Python tests.Unittest MazeHelperTest.test_cellcount" />
-        <item index="2" class="java.lang.String" itemvalue="Python tests.Unittests in MazeHelperTest" />
+      <list size="5">
+        <item index="0" class="java.lang.String" itemvalue="Python tests.Unittests in TestMaskFactory" />
+        <item index="1" class="java.lang.String" itemvalue="Python tests.Unittest TestMaskFactory.test_mask_maze_masks_maze_correctly" />
+        <item index="2" class="java.lang.String" itemvalue="Python tests.Unittest TestMaskFactory.test_mask_maze_raises_error_when_different_length" />
+        <item index="3" class="java.lang.String" itemvalue="Python tests.Unittest TestMaskFactory.test_mask_factory_reads_file" />
+        <item index="4" class="java.lang.String" itemvalue="Python.__init__ " />
       </list>
     </recent_temporary>
   </component>
@@ -515,20 +593,35 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Unittest_MazeHelperTest_test_cellcount - 2016.04.02 at 16h 47m 36s.xml">
-      <configuration name="Unittest MazeHelperTest.test_cellcount" configurationId="tests" />
+    <history-entry file="Unittest_TestMaskFactory_test_mask_maze_masks_maze_correctly - 2016.06.18 at 18h 15m 08s.xml">
+      <configuration name="Unittest TestMaskFactory.test_mask_maze_masks_maze_correctly" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittest_MazeHelperTest_test_something - 2016.04.02 at 16h 38m 37s.xml">
-      <configuration name="Unittest MazeHelperTest.test_something" configurationId="tests" />
+    <history-entry file="Unittest_TestMaskFactory_test_mask_maze_masks_maze_correctly - 2016.06.18 at 18h 26m 21s.xml">
+      <configuration name="Unittest TestMaskFactory.test_mask_maze_masks_maze_correctly" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittest_MazeHelperTest_test_something - 2016.04.02 at 16h 38m 50s.xml">
-      <configuration name="Unittest MazeHelperTest.test_something" configurationId="tests" />
+    <history-entry file="Unittest_TestMaskFactory_test_mask_maze_masks_maze_correctly - 2016.06.18 at 18h 27m 22s.xml">
+      <configuration name="Unittest TestMaskFactory.test_mask_maze_masks_maze_correctly" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittest_MazeHelperTest_test_something - 2016.04.02 at 16h 39m 01s.xml">
-      <configuration name="Unittest MazeHelperTest.test_something" configurationId="tests" />
+    <history-entry file="Unittest_TestMaskFactory_test_mask_maze_masks_maze_correctly - 2016.06.18 at 18h 30m 04s.xml">
+      <configuration name="Unittest TestMaskFactory.test_mask_maze_masks_maze_correctly" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_MazeHelperTest - 2016.04.02 at 16h 47m 10s.xml">
-      <configuration name="Unittests in MazeHelperTest" configurationId="tests" />
+    <history-entry file="Unittest_TestMaskFactory_test_mask_maze_masks_maze_correctly - 2016.06.18 at 18h 32m 30s.xml">
+      <configuration name="Unittest TestMaskFactory.test_mask_maze_masks_maze_correctly" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittest_TestMaskFactory_test_mask_maze_masks_maze_correctly - 2016.06.18 at 18h 32m 56s.xml">
+      <configuration name="Unittest TestMaskFactory.test_mask_maze_masks_maze_correctly" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittest_TestMaskFactory_test_mask_maze_masks_maze_correctly - 2016.06.18 at 18h 36m 09s.xml">
+      <configuration name="Unittest TestMaskFactory.test_mask_maze_masks_maze_correctly" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittest_TestMaskFactory_test_mask_maze_masks_maze_correctly - 2016.06.18 at 18h 36m 51s.xml">
+      <configuration name="Unittest TestMaskFactory.test_mask_maze_masks_maze_correctly" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittest_TestMaskFactory_test_mask_maze_masks_maze_correctly - 2016.06.18 at 18h 37m 05s.xml">
+      <configuration name="Unittest TestMaskFactory.test_mask_maze_masks_maze_correctly" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_TestMaskFactory - 2016.06.18 at 18h 37m 10s.xml">
+      <configuration name="Unittests in TestMaskFactory" configurationId="tests" />
     </history-entry>
   </component>
   <component name="TodoView">
@@ -547,19 +640,19 @@
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21349499" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32998884" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32871974" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.18800461" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2214533" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25836217" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23827095" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3298731" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33448672" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23990773" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32871974" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
@@ -595,6 +688,18 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="python-line">
+          <url>file://$PROJECT_DIR$/src/test/mask_factory_test.py</url>
+          <line>35</line>
+          <option name="timeStamp" value="44" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="python-line">
+          <url>file://$PROJECT_DIR$/src/test/mask_factory_test.py</url>
+          <line>23</line>
+          <option name="timeStamp" value="49" />
+        </line-breakpoint>
+      </breakpoints>
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
@@ -605,53 +710,11 @@
           </properties>
         </breakpoint>
       </default-breakpoints>
-      <option name="time" value="41" />
+      <option name="time" value="51" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/test/mazehelper_test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/maze/factory/mazefactory_aldousbroder.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="15" column="54" selection-start-line="15" selection-start-column="23" selection-end-line="15" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/maze/maze.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="11" column="45" selection-start-line="10" selection-start-column="8" selection-end-line="11" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/maze/renderer/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/start/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="10" column="21" selection-start-line="10" selection-start-column="21" selection-end-line="10" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/maze/maze.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/start/mazes_dialog.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -862,24 +925,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/maze/cell.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="21" column="14" selection-start-line="21" selection-start-column="14" selection-end-line="21" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/maze/factory/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/maze/maze.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="11" column="45" selection-start-line="10" selection-start-column="8" selection-end-line="11" selection-end-column="45" />
         </state>
       </provider>
     </entry>
@@ -894,13 +943,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="10" column="21" selection-start-line="10" selection-start-column="21" selection-end-line="10" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/mazehelper_test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -970,13 +1012,87 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/maze/factory/mask01.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/maze/factory/mazefactory_huntandkill.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8207885">
+        <state vertical-scroll-proportion="0.0">
           <caret line="72" column="20" selection-start-line="72" selection-start-column="20" selection-end-line="72" selection-end-column="20" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/maze/maze.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="5" column="8" selection-start-line="5" selection-start-column="8" selection-end-line="5" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/mazehelper_test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3027523">
+          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/maze/cell.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="9" column="27" selection-start-line="9" selection-start-column="27" selection-end-line="9" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/lib/python3.5/unittest/case.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33189654">
+          <caret line="599" column="0" selection-start-line="599" selection-start-column="0" selection-end-line="599" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/mask01.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="1" column="2" selection-start-line="1" selection-start-column="2" selection-end-line="1" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/mask02.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/mask_factory_test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="32" column="0" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#29#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/maze/factory/mask_factory.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.685155">
+          <caret line="28" column="0" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>

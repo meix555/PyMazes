@@ -7,6 +7,7 @@ class Cell(object):
         self.col_idx = col_idx
         self.row_idx = row_idx
         self.visited = False
+        self.masked = False
 
         self.size = size
 
