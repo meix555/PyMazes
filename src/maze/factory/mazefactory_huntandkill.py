@@ -7,10 +7,10 @@ from ..mazehelper import *
 
 
 class MazeFactoryHuntAndKill(AbstractMazeFactory):
-    def create_maze(self, cell_size:int, maze_width:int, maze_height:int, mask_filename:str = None):
+    def create_maze(self, maze_width:int, maze_height:int, mask_filename:str = None):
         random.seed()
 
-        self.maze = Maze(cell_size, maze_width, maze_height)
+        self.maze = Maze(maze_width, maze_height)
 
         self.maze = MaskFactory.mask_maze(self.maze, mask_filename)
 

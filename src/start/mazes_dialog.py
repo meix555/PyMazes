@@ -9,6 +9,9 @@ from src.maze.renderer.mazerenderer import MazeRenderer
 
 
 class PyMazesDialog(QtWidgets.QDialog):
+
+    CELL_SIZE = 20
+
     def __init__(self, parent=None):
         super().__init__(parent)
 
@@ -31,7 +34,7 @@ class PyMazesDialog(QtWidgets.QDialog):
 
     def paintEvent(self, event):
         if self.draw:
-            mazerenderer = MazeRenderer(self.get_painter(), self.base_x, self.base_y)
+            mazerenderer = MazeRenderer(self.get_painter(), self.base_x, self.base_y, self.CELL_SIZE)
             mazerenderer.render(self.maze);
 
 
@@ -43,9 +46,9 @@ class PyMazesDialog(QtWidgets.QDialog):
         mazefactory = self.factories[index]
 
         if type(mazefactory) is MazeFactoryHuntAndKill:
-            self.maze = mazefactory.create_maze(20, width, height, 'huntAndKill.txt')
+            self.maze = mazefactory.create_maze(width, height, 'huntAndKill.txt')
         else:
-            self.maze = mazefactory.create_maze(20, width, height)
+            self.maze = mazefactory.create_maze(width, height)
 
         self.draw = True
 

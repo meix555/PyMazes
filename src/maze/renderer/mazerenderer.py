@@ -2,8 +2,8 @@ from .cellrenderer import CellRenderer
 
 
 class MazeRenderer(object):
-    def __init__(self, painter, base_x, base_y):
-        self.cellrenderer = CellRenderer(painter, base_x, base_y)
+    def __init__(self, painter, base_x, base_y, cell_size):
+        self.cellrenderer = CellRenderer(painter, base_x, base_y, cell_size)
 
     def render(self, maze):
 
