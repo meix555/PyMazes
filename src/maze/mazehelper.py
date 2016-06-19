@@ -1,10 +1,11 @@
 import random
 
+from src.maze.abstract_maze_helper import AbstractMazeHelper
 from .walltype import *
 from .wallorientation import *
 
 
-class MazeHelper(object):
+class MazeHelper(AbstractMazeHelper):
     @staticmethod
     def erase_wall(maze, col_idx, row_idx, orientation):
         maze.cells[col_idx][row_idx].set_walltype(orientation, WallType.OPEN)
@@ -45,11 +46,6 @@ class MazeHelper(object):
             found = not cell.masked
 
         return cell
-
-
-    @staticmethod
-    def get_cellcount(maze):
-        return maze.maze_width * maze.maze_height
 
 
     # masking!

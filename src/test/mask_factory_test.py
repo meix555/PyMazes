@@ -21,7 +21,7 @@ class TestMaskFactory(TestCase):
 
     @should_raise(ValueError)
     def test_mask_maze_raises_error_when_different_length(self):
-        maze = Maze(20, 4, 4)
+        maze = Maze(4, 4)
 
         mask = [[False, False, False, False, False],
                 [False, True, True, True, False],
@@ -33,7 +33,7 @@ class TestMaskFactory(TestCase):
 
 
     def test_mask_maze_masks_maze_correctly(self):
-        maze = Maze(20, 5, 5)
+        maze = Maze(5, 5)
         mask = MaskFactory._create_mask('resources/mask02.txt')
 
         maze = MaskFactory._mask_maze(maze, mask)

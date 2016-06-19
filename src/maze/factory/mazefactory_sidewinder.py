@@ -6,6 +6,10 @@ import random
 
 
 class MazeFactorySidewinder(AbstractMazeFactory):
+
+    def __init__(self, mazehelper):
+        self.mazehelper = mazehelper
+
     def create_maze(self, maze_width:int, maze_height:int, mask_filename:str = None):
 
         random.seed()
@@ -14,7 +18,7 @@ class MazeFactorySidewinder(AbstractMazeFactory):
 
         # erase east walls in upper row
         for col_idx in range(maze.maze_width - 1):
-            MazeHelper.erase_wall(maze, col_idx, 0, WallOrientation.EAST)
+            self.mazehelper.erase_wall(maze, col_idx, 0, WallOrientation.EAST)
 
         run = []
 

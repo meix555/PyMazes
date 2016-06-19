@@ -1,13 +1,12 @@
 import unittest
 
-from src.main.python.maze.maze import Maze
-
+from src.maze.maze import Maze
 from src.maze.mazehelper import MazeHelper
 
 
 class MazeHelperTest(unittest.TestCase):
     def setUp(self):
-        self.maze = Maze(20, 3, 3)
+        self.maze = Maze(3, 3)
 
 
     def test_cellcount(self):

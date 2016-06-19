@@ -6,11 +6,14 @@ import random
 
 
 class MazeFactoryWilson(AbstractMazeFactory):
-    def __init__(self):
+
+
+    def __init__(self, mazehelper:AbstractMazeHelper):
         self.path = []
         self.path_complete = False
         self.visited = []
         self.num_visitedcells = 0
+        self.mazehelper = mazehelper
 
 
     def create_maze(self, maze_width:int, maze_height:int, mask_filename:str = None):
@@ -22,22 +25,22 @@ class MazeFactoryWilson(AbstractMazeFactory):
                         range(maze_width)]
 
         # get initial cell
-        current_cell = MazeHelper.find_random_unvisited_cell(maze, self.visited)
+        current_cell = self.mazehelper.find_random_unvisited_cell(maze, self.visited)
         self.visited[current_cell.col_idx][current_cell.row_idx] = True
 
         self.num_visitedcells = 1
 
-        while self.num_visitedcells < MazeHelper.get_cellcount(maze):
+        while self.num_visitedcells < self.mazehelper.get_cellcount(maze):
             self.path = []
 
             # select an unvisited cell
-            current_cell = MazeHelper.find_random_unvisited_cell(maze, self.visited)
+            current_cell = self.mazehelper.find_random_unvisited_cell(maze, self.visited)
             self.path.append(current_cell)
 
             self.path_complete = False
 
             while not self.path_complete:
-                neighbour_cell = MazeHelper.get_random_neighbourcell(maze, current_cell)
+                neighbour_cell = self.mazehelper.get_random_neighbourcell(maze, current_cell)
 
                 if self.visited[neighbour_cell.col_idx][neighbour_cell.row_idx]:
                     self.process_visited_cell_found(maze, neighbour_cell)
@@ -69,8 +72,8 @@ class MazeFactoryWilson(AbstractMazeFactory):
         for i in range(len(self.path) - 1):
             cell_0 = self.path[i]
             cell_1 = self.path[i + 1]
-            orientation = MazeHelper.get_wall_orientation(cell_0, cell_1)
-            MazeHelper.erase_wall(maze, cell_0.col_idx, cell_0.row_idx, orientation)
+            orientation = self.mazehelper.get_wall_orientation(cell_0, cell_1)
+            self.mazehelper.erase_wall(maze, cell_0.col_idx, cell_0.row_idx, orientation)
             self.visited[cell_0.col_idx][cell_0.row_idx] = True
 
             self.num_visitedcells += 1
