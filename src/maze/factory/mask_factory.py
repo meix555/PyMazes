@@ -25,7 +25,7 @@ class MaskFactory(object):
         for row_idx in range(len(mask)):
             row = mask[row_idx]
             for col_idx in range(len(row)):
-                maze.cells[col_idx][row_idx].masked = row[col_idx]
+                maze.cells[row_idx][col_idx].masked = row[col_idx]
 
         return maze
 

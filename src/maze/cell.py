@@ -3,9 +3,9 @@ from .wallorientation import *
 
 
 class Cell(object):
-    def __init__(self, col_idx, row_idx):
-        self.col_idx = col_idx
+    def __init__(self, row_idx, col_idx):
         self.row_idx = row_idx
+        self.col_idx = col_idx
         self.visited = False
         self.masked = False
 

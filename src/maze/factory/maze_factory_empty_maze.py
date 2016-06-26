@@ -7,8 +7,8 @@ class MazeFactoryEmptyMaze(AbstractMazeFactory):
         self.mazehelper = mazehelper
 
 
-    def create_maze(self, maze_width: int, maze_height: int, mask_filename: str = None):
+    def create_maze(self, maze_height: int, maze_width: int, mask_filename: str = None):
 
-        self.maze = Maze(maze_width, maze_height)
+        self.maze = Maze(maze_height, maze_width)
 
         return self.maze

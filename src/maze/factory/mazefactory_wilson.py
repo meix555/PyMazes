@@ -16,17 +16,16 @@ class MazeFactoryWilson(AbstractMazeFactory):
         self.mazehelper = mazehelper
 
 
-    def create_maze(self, maze_width:int, maze_height:int, mask_filename:str = None):
+    def create_maze(self, maze_height: int, maze_width: int, mask_filename: str = None):
         random.seed()
 
-        maze = Maze(maze_width, maze_height)
+        maze = Maze(maze_height, maze_width)
 
-        self.visited = [[False for row_idx in range(maze_height)] for col_idx in
-                        range(maze_width)]
+        self.visited = [[False for _1 in range(maze_height)] for _2 in range(maze_width)]
 
         # get initial cell
         current_cell = self.mazehelper.find_random_unvisited_cell(maze, self.visited)
-        self.visited[current_cell.col_idx][current_cell.row_idx] = True
+        self.visited[current_cell.row_idx][current_cell.col_idx] = True
 
         self.num_visitedcells = 1
 
@@ -42,7 +41,7 @@ class MazeFactoryWilson(AbstractMazeFactory):
             while not self.path_complete:
                 neighbour_cell = self.mazehelper.get_random_neighbourcell(maze, current_cell)
 
-                if self.visited[neighbour_cell.col_idx][neighbour_cell.row_idx]:
+                if self.visited[neighbour_cell.row_idx][neighbour_cell.col_idx]:
                     self.process_visited_cell_found(maze, neighbour_cell)
                 else:
                     current_cell = self.process_unvisited_cell_found(current_cell, neighbour_cell)
@@ -73,8 +72,8 @@ class MazeFactoryWilson(AbstractMazeFactory):
             cell_0 = self.path[i]
             cell_1 = self.path[i + 1]
             orientation = self.mazehelper.get_wall_orientation(cell_0, cell_1)
-            self.mazehelper.erase_wall(maze, cell_0.col_idx, cell_0.row_idx, orientation)
-            self.visited[cell_0.col_idx][cell_0.row_idx] = True
+            self.mazehelper.erase_wall(maze, cell_0.row_idx, cell_0.col_idx, orientation)
+            self.visited[cell_0.row_idx][cell_0.col_idx] = True
 
             self.num_visitedcells += 1
 

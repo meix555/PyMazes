@@ -7,5 +7,5 @@ class Maze(object):
         self.maze_width = maze_width
         self.maze_height = maze_height
 
-        self.cells = [[Cell(col_idx, row_idx) for row_idx in range(self.maze_height)] for col_idx in
-                      range(self.maze_width)]
+        self.cells = [[Cell(row_idx, col_idx) for col_idx in range(self.maze_width)] for row_idx in
+                      range(self.maze_height)]

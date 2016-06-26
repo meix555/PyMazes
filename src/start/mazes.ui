@@ -88,6 +88,11 @@
     </property>
     <item>
      <property name="text">
+      <string>Binary Tree</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
       <string>Sidewinder</string>
      </property>
     </item>
@@ -113,12 +118,12 @@
     </item>
     <item>
      <property name="text">
-      <string>Binary Tree</string>
+      <string>Empty maze</string>
      </property>
     </item>
     <item>
      <property name="text">
-      <string>Empty maze</string>
+      <string>Empty maze round</string>
      </property>
     </item>
    </widget>

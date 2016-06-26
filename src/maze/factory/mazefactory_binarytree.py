@@ -10,26 +10,26 @@ class MazeFactoryBinaryTree(object):
         self.mazehelper = mazehelper
 
 
-    def create_maze(self, maze_width: int, maze_height: int, mask_filename: str = None):
+    def create_maze(self, maze_height: int, maze_width: int, mask_filename: str = None):
 
         random.seed()
 
-        maze = Maze(maze_width, maze_height)
+        maze = Maze(maze_height, maze_width)
 
         # erase east walls in upper row
         for col_idx in range(maze.maze_width - 1):
-            self.mazehelper.erase_wall(maze, col_idx, 0, WallOrientation.EAST)
+            self.mazehelper.erase_wall(maze, 0, col_idx, WallOrientation.EAST)
 
         # erase north walls in right-most column
         for row_idx in range(1, maze.maze_height):
-            self.mazehelper.erase_wall(maze, maze.maze_width - 1, row_idx, WallOrientation.NORTH)
+            self.mazehelper.erase_wall(maze, row_idx, maze.maze_width - 1, WallOrientation.NORTH)
 
-        for col_idx in range(maze.maze_width - 1):
-            for row_idx in range(1, maze.maze_height):
+        for row_idx in range(1, maze.maze_height):
+            for col_idx in range(maze.maze_width - 1):
                 if self.erase_north():
-                    self.mazehelper.erase_wall(maze, col_idx, row_idx, WallOrientation.NORTH)
+                    self.mazehelper.erase_wall(maze, row_idx, col_idx, WallOrientation.NORTH)
                 else:
-                    self.mazehelper.erase_wall(maze, col_idx, row_idx, WallOrientation.EAST)
+                    self.mazehelper.erase_wall(maze, row_idx, col_idx, WallOrientation.EAST)
 
         return maze
 

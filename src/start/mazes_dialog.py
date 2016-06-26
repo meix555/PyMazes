@@ -1,13 +1,15 @@
 from PyQt5 import QtWidgets, QtGui, uic
 
 from src.maze.factory.maze_factory_empty_maze import MazeFactoryEmptyMaze
-from src.maze.factory.mazefactory_binarytree import MazeFactoryBinaryTree
-from src.maze.factory.mazefactory_sidewinder import MazeFactorySidewinder
 from src.maze.factory.mazefactory_aldousbroder import MazeFactoryAldousBroder
-from src.maze.factory.mazefactory_wilson import MazeFactoryWilson
+from src.maze.factory.mazefactory_binarytree import MazeFactoryBinaryTree
 from src.maze.factory.mazefactory_huntandkill import MazeFactoryHuntAndKill
-from src.maze.renderer.mazerenderer import MazeRenderer
+from src.maze.factory.mazefactory_sidewinder import MazeFactorySidewinder
+from src.maze.factory.mazefactory_wilson import MazeFactoryWilson
 from src.maze.mazehelper import MazeHelper
+from src.maze.renderer.ortho_mazerenderer import OrthoMazeRenderer
+from src.maze.renderer.point2d import Point2D
+from src.maze.renderer.polar_mazerenderer import PolarMazeRenderer
 
 
 class PyMazesDialog(QtWidgets.QDialog):
@@ -33,24 +35,30 @@ class PyMazesDialog(QtWidgets.QDialog):
 
         self.factories = self.create_factorylist()
 
+        self.selection_index = 0
+
 
     def paintEvent(self, event):
         if self.draw:
-            mazerenderer = MazeRenderer(self.get_painter(), self.base_x, self.base_y, self.CELL_SIZE)
-            mazerenderer.render(self.maze);
+            maze_renderer = None
+            if self.selection_index < 7:
+                maze_renderer = OrthoMazeRenderer(self.get_painter(), self.base_x, self.base_y, self.CELL_SIZE)
+            else:
+                maze_renderer = PolarMazeRenderer(self.get_painter(), Point2D(200, 200), self.CELL_SIZE*2)
+            maze_renderer.render_maze(self.maze);
 
 
     def onDraw(self):
         width = int(self.ui.widthEdit.text())
         height = int(self.ui.heightEdit.text())
 
-        index = self.ui.algorithmComboBox.currentIndex()
-        mazefactory = self.factories[index]
+        self.selection_index = self.ui.algorithmComboBox.currentIndex()
+        mazefactory = self.factories[self.selection_index]
 
-        if index < 5:
+        if self.selection_index < 5:
             self.maze = mazefactory.create_maze(width, height)
-        elif index == 5:
-            self.maze = mazefactory.create_maze(5, 5, 'huntAndKill.txt')
+        elif self.selection_index == 5:
+            self.maze = mazefactory.create_maze(5, 5, 'huntAndKillMask.txt')
         else:
             self.maze = mazefactory.create_maze(width, height)
 
@@ -71,6 +79,7 @@ class PyMazesDialog(QtWidgets.QDialog):
         factories = [MazeFactoryBinaryTree(MazeHelper), MazeFactorySidewinder(MazeHelper),
                      MazeFactoryAldousBroder(MazeHelper),
                      MazeFactoryWilson(MazeHelper), MazeFactoryHuntAndKill(MazeHelper),
-                     MazeFactoryHuntAndKill(MazeHelper), MazeFactoryEmptyMaze(MazeHelper)]
+                     MazeFactoryHuntAndKill(MazeHelper), MazeFactoryEmptyMaze(MazeHelper),
+                     MazeFactoryEmptyMaze(MazeHelper)]
 
         return factories

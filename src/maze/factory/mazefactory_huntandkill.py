@@ -10,20 +10,19 @@ class MazeFactoryHuntAndKill(AbstractMazeFactory):
         self.mazehelper = mazehelper
 
 
-    def create_maze(self, maze_width: int, maze_height: int, mask_filename: str = None):
+    def create_maze(self, maze_height: int, maze_width: int, mask_filename: str = None):
         random.seed()
 
-        self.maze = Maze(maze_width, maze_height)
+        self.maze = Maze(maze_height, maze_width)
 
         self.maze = MaskFactory.mask_maze(self.maze, mask_filename)
 
-        self.visited = [[False for row_idx in range(maze_height)] for col_idx in
-                        range(maze_width)]
+        self.visited = [[False for _1 in range(maze_height)] for _2 in range(maze_width)]
 
         current_cell = self.mazehelper.find_random_unvisited_cell(self.maze, self.visited)
 
         while current_cell:
-            self.visited[current_cell.col_idx][current_cell.row_idx] = True
+            self.visited[current_cell.row_idx][current_cell.col_idx] = True
             self.compute_path(current_cell)
             current_cell = self.hunt()
 
@@ -38,7 +37,7 @@ class MazeFactoryHuntAndKill(AbstractMazeFactory):
             neighbour_cell = self.mazehelper.get_unvisited_random_neighbourcell(self.maze, current_cell, self.visited)
 
             if neighbour_cell:
-                self.visited[neighbour_cell.col_idx][neighbour_cell.row_idx] = True
+                self.visited[neighbour_cell.row_idx][neighbour_cell.col_idx] = True
                 self.mazehelper.erase_wall_between_cells(self.maze, current_cell, neighbour_cell)
                 current_cell = neighbour_cell
             else:
@@ -62,9 +61,9 @@ class MazeFactoryHuntAndKill(AbstractMazeFactory):
             for row_idx in range(self.maze.maze_height):
                 for col_idx in range(self.maze.maze_width):
 
-                    test_cell = self.maze.cells[col_idx][row_idx]
+                    test_cell = self.maze.cells[row_idx][col_idx]
 
-                    if self.visited[test_cell.col_idx][test_cell.row_idx] or test_cell.masked:
+                    if self.visited[test_cell.row_idx][test_cell.col_idx] or test_cell.masked:
                         continue
 
                     visited_neighbour_cell = self.mazehelper.get_visited_random_neighbourcell(self.maze, test_cell,

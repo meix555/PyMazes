@@ -10,18 +10,15 @@ class MazeFactoryAldousBroder(AbstractMazeFactory):
         self.mazehelper = mazehelper
 
 
-    def create_maze(self, maze_width:int, maze_height:int, mask_filename:str = None):
+    def create_maze(self, maze_height: int, maze_width: int, mask_filename: str = None):
         random.seed()
 
-        maze = Maze(maze_width, maze_height)
+        maze = Maze(maze_height, maze_width)
 
-
-
-        visited = [[False for row_idx in range(maze_height)] for col_idx in
-                   range(maze_width)]
+        visited = [[False for _1 in range(maze_height)] for _2 in range(maze_width)]
 
         current_cell = self.mazehelper.get_randomcell(maze)
-        visited[current_cell.col_idx][current_cell.row_idx] = True
+        visited[current_cell.row_idx][current_cell.col_idx] = True
         num_visited_cells = 1
 
         while num_visited_cells < self.mazehelper.get_cellcount(maze):
@@ -32,9 +29,9 @@ class MazeFactoryAldousBroder(AbstractMazeFactory):
             next_cell = neighbour_cells[random_orientation]
 
             # process neighbour cell
-            if not visited[next_cell.col_idx][next_cell.row_idx]:
-                self.mazehelper.erase_wall(maze, current_cell.col_idx, current_cell.row_idx, random_orientation)
-                visited[next_cell.col_idx][next_cell.row_idx] = True
+            if not visited[next_cell.row_idx][next_cell.col_idx]:
+                self.mazehelper.erase_wall(maze, current_cell.row_idx, current_cell.col_idx, random_orientation)
+                visited[next_cell.row_idx][next_cell.col_idx] = True
                 num_visited_cells += 1
 
             current_cell = next_cell
