@@ -88,11 +88,6 @@
     </property>
     <item>
      <property name="text">
-      <string>Binary Tree</string>
-     </property>
-    </item>
-    <item>
-     <property name="text">
       <string>Sidewinder</string>
      </property>
     </item>
@@ -109,6 +104,21 @@
     <item>
      <property name="text">
       <string>Hunt and Kill</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Hunt and Kill with mask</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Binary Tree</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Empty maze</string>
      </property>
     </item>
    </widget>

@@ -1,4 +1,6 @@
 from PyQt5 import QtWidgets, QtGui, uic
+
+from src.maze.factory.maze_factory_empty_maze import MazeFactoryEmptyMaze
 from src.maze.factory.mazefactory_binarytree import MazeFactoryBinaryTree
 from src.maze.factory.mazefactory_sidewinder import MazeFactorySidewinder
 from src.maze.factory.mazefactory_aldousbroder import MazeFactoryAldousBroder
@@ -45,8 +47,10 @@ class PyMazesDialog(QtWidgets.QDialog):
         index = self.ui.algorithmComboBox.currentIndex()
         mazefactory = self.factories[index]
 
-        if type(mazefactory) is MazeFactoryHuntAndKill:
-            self.maze = mazefactory.create_maze(width, height, 'huntAndKill.txt')
+        if index < 5:
+            self.maze = mazefactory.create_maze(width, height)
+        elif index == 5:
+            self.maze = mazefactory.create_maze(5, 5, 'huntAndKill.txt')
         else:
             self.maze = mazefactory.create_maze(width, height)
 
@@ -66,6 +70,7 @@ class PyMazesDialog(QtWidgets.QDialog):
     def create_factorylist(self):
         factories = [MazeFactoryBinaryTree(MazeHelper), MazeFactorySidewinder(MazeHelper),
                      MazeFactoryAldousBroder(MazeHelper),
-                     MazeFactoryWilson(MazeHelper), MazeFactoryHuntAndKill(MazeHelper)]
+                     MazeFactoryWilson(MazeHelper), MazeFactoryHuntAndKill(MazeHelper),
+                     MazeFactoryHuntAndKill(MazeHelper), MazeFactoryEmptyMaze(MazeHelper)]
 
         return factories
