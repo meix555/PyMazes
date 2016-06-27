@@ -2,25 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="90ebcf24-5f1d-44cd-9835-78940a8327ac" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/maze/renderer/abstract_mazerenderer.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/maze/renderer/point2d.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/maze/renderer/polar_mazerenderer.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/maze/renderer/mazerenderer.py" afterPath="$PROJECT_DIR$/src/maze/renderer/ortho_mazerenderer.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/start/huntAndKill.txt" afterPath="$PROJECT_DIR$/src/start/huntAndKillMask.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/start/mazes.ui" afterPath="$PROJECT_DIR$/src/start/mazes.ui" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/maze/cell.py" afterPath="$PROJECT_DIR$/src/maze/cell.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/maze/factory/abstractmazefactory.py" afterPath="$PROJECT_DIR$/src/maze/factory/abstractmazefactory.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/maze/factory/mask_factory.py" afterPath="$PROJECT_DIR$/src/maze/factory/mask_factory.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/maze/factory/maze_factory_empty_maze.py" afterPath="$PROJECT_DIR$/src/maze/factory/maze_factory_empty_maze.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/maze/factory/mazefactory_aldousbroder.py" afterPath="$PROJECT_DIR$/src/maze/factory/mazefactory_aldousbroder.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/maze/factory/mazefactory_binarytree.py" afterPath="$PROJECT_DIR$/src/maze/factory/mazefactory_binarytree.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/maze/factory/mazefactory_huntandkill.py" afterPath="$PROJECT_DIR$/src/maze/factory/mazefactory_huntandkill.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/maze/factory/mazefactory_sidewinder.py" afterPath="$PROJECT_DIR$/src/maze/factory/mazefactory_sidewinder.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/maze/factory/mazefactory_wilson.py" afterPath="$PROJECT_DIR$/src/maze/factory/mazefactory_wilson.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/maze/maze.py" afterPath="$PROJECT_DIR$/src/maze/maze.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/maze/mazehelper.py" afterPath="$PROJECT_DIR$/src/maze/mazehelper.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/start/mazes_dialog.py" afterPath="$PROJECT_DIR$/src/start/mazes_dialog.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/maze/renderer/cellrenderer.py" afterPath="$PROJECT_DIR$/src/maze/renderer/cellrenderer.py" />
     </list>
     <ignored path="PyMazes.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -41,6 +24,30 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="mazes_dialog.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/start/mazes_dialog.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="518">
+              <caret line="46" column="105" selection-start-line="46" selection-start-column="105" selection-end-line="46" selection-end-column="105" />
+              <folding>
+                <element signature="e#0#39#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="cellrenderer.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/maze/renderer/cellrenderer.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="375">
+              <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+              <folding>
+                <element signature="e#0#24#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="mazefactory_huntandkill.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/maze/factory/mazefactory_huntandkill.py">
           <provider selected="true" editor-type-id="text-editor">
@@ -51,11 +58,23 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="mazefactory_aldousbroder.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ortho_mazerenderer.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/maze/renderer/ortho_mazerenderer.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="75">
+              <caret line="6" column="32" selection-start-line="6" selection-start-column="32" selection-end-line="6" selection-end-column="32" />
+              <folding>
+                <element signature="e#0#72#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="mazefactory_aldousbroder.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/maze/factory/mazefactory_aldousbroder.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="458">
-              <caret line="32" column="87" selection-start-line="32" selection-start-column="87" selection-end-line="32" selection-end-column="87" />
+            <state relative-caret-position="525">
+              <caret line="39" column="0" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
               </folding>
@@ -101,7 +120,6 @@
         <option value="$PROJECT_DIR$/src/maze/factory/huntAndKill.txt" />
         <option value="$PROJECT_DIR$/src/start/huntAndKill.txt" />
         <option value="$PROJECT_DIR$/src/maze/renderer/mazerenderer.py" />
-        <option value="$PROJECT_DIR$/src/maze/renderer/cellrenderer.py" />
         <option value="$PROJECT_DIR$/src/maze/AbstractMazeHelper.py" />
         <option value="$PROJECT_DIR$/src/maze/abstract_maze_helper.py" />
         <option value="$PROJECT_DIR$/src/test/mask_factory_test.py" />
@@ -122,6 +140,7 @@
         <option value="$PROJECT_DIR$/src/maze/factory/mazefactory_wilson.py" />
         <option value="$PROJECT_DIR$/src/maze/factory/mazefactory_huntandkill.py" />
         <option value="$PROJECT_DIR$/src/maze/factory/mazefactory_aldousbroder.py" />
+        <option value="$PROJECT_DIR$/src/maze/renderer/cellrenderer.py" />
       </list>
     </option>
   </component>
@@ -288,7 +307,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
       <pane id="Scope">
         <subPane subId="Project Files">
           <PATH>
@@ -299,6 +317,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -641,7 +660,14 @@
       <option name="project" value="LOCAL" />
       <updated>1466924377558</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="changed row_idx and col_idx order in maze.cell">
+      <created>1466950805120</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1466950805120</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -745,7 +771,8 @@
     <MESSAGE value="cell size moved from cell to renderer" />
     <MESSAGE value="refactored MazeHelper" />
     <MESSAGE value="refactored main dialog" />
-    <option name="LAST_COMMIT_MESSAGE" value="refactored main dialog" />
+    <MESSAGE value="changed row_idx and col_idx order in maze.cell" />
+    <option name="LAST_COMMIT_MESSAGE" value="changed row_idx and col_idx order in maze.cell" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -789,6 +816,44 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/start/mazes_dialog.py">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/maze/factory/mazefactory_huntandkill.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="19" column="89" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="89" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/maze/renderer/ortho_mazerenderer.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="6" column="32" selection-start-line="6" selection-start-column="32" selection-end-line="6" selection-end-column="32" />
+          <folding>
+            <element signature="e#0#72#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/maze/factory/mazefactory_aldousbroder.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="525">
+          <caret line="39" column="0" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/start/mazes_dialog.py">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="510">
           <caret line="43" column="0" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
           <folding>
@@ -801,7 +866,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#0#72#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -809,7 +876,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
           <caret line="2" column="12" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -817,7 +883,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
           <caret line="2" column="64" selection-start-line="2" selection-start-column="64" selection-end-line="2" selection-end-column="64" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -883,7 +948,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
           <caret line="2" column="64" selection-start-line="2" selection-start-column="64" selection-end-line="2" selection-end-column="64" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -891,20 +955,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
           <caret line="3" column="18" selection-start-line="3" selection-start-column="18" selection-end-line="3" selection-end-column="18" />
-          <folding>
-            <marker date="1466946994606" expanded="true" signature="22:90" ph="..." />
-            <marker date="1466946994606" expanded="true" signature="52:90" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/start/mazes_dialog.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="518">
-          <caret line="46" column="105" selection-start-line="46" selection-start-column="105" selection-end-line="46" selection-end-column="105" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -912,7 +962,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="405">
           <caret line="27" column="39" selection-start-line="27" selection-start-column="39" selection-end-line="27" selection-end-column="39" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -920,9 +969,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
           <caret line="9" column="86" selection-start-line="9" selection-start-column="20" selection-end-line="9" selection-end-column="86" />
-          <folding>
-            <element signature="e#0#68#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -930,9 +976,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
           <caret line="12" column="20" selection-start-line="12" selection-start-column="20" selection-end-line="12" selection-end-column="86" />
-          <folding>
-            <element signature="e#0#68#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -940,7 +983,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
           <caret line="1" column="8" selection-start-line="1" selection-start-column="8" selection-end-line="1" selection-end-column="8" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -948,9 +990,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
           <caret line="22" column="21" selection-start-line="22" selection-start-column="21" selection-end-line="22" selection-end-column="21" />
-          <folding>
-            <element signature="e#0#72#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -958,7 +997,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -990,29 +1028,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
           <caret line="5" column="8" selection-start-line="5" selection-start-column="8" selection-end-line="5" selection-end-column="8" />
-          <folding>
-            <element signature="e#0#18#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/maze/renderer/ortho_mazerenderer.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="32" selection-start-line="6" selection-start-column="32" selection-end-line="6" selection-end-column="32" />
-          <folding>
-            <element signature="e#0#72#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/maze/renderer/cellrenderer.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="8" selection-start-line="5" selection-start-column="8" selection-end-line="5" selection-end-column="8" />
-          <folding>
-            <element signature="e#0#24#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1020,7 +1035,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1028,9 +1042,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
           <caret line="14" column="21" selection-start-line="14" selection-start-column="21" selection-end-line="14" selection-end-column="21" />
-          <folding>
-            <element signature="e#0#68#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1062,10 +1073,40 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/maze/factory/mazefactory_aldousbroder.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="458">
-          <caret line="32" column="87" selection-start-line="32" selection-start-column="87" selection-end-line="32" selection-end-column="87" />
+        <state relative-caret-position="525">
+          <caret line="39" column="0" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/maze/renderer/ortho_mazerenderer.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="6" column="32" selection-start-line="6" selection-start-column="32" selection-end-line="6" selection-end-column="32" />
+          <folding>
+            <element signature="e#0#72#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/start/mazes_dialog.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="518">
+          <caret line="46" column="105" selection-start-line="46" selection-start-column="105" selection-end-line="46" selection-end-column="105" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/maze/renderer/cellrenderer.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#24#0" expanded="true" />
           </folding>
         </state>
       </provider>
