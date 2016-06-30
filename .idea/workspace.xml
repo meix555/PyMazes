@@ -2,19 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="90ebcf24-5f1d-44cd-9835-78940a8327ac" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/algorithm/__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/algorithm/mazealgorithmtype.py" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/maze/mazehelper.py" afterPath="$PROJECT_DIR$/src/maze/ortho_mazehelper.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/maze/renderer/cellrenderer.py" afterPath="$PROJECT_DIR$/src/maze/renderer/ortho_cellrenderer.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/start/mazes_dialog.py" afterPath="$PROJECT_DIR$/src/start/start.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/maze/factory/mazefactory_aldousbroder.py" afterPath="$PROJECT_DIR$/src/maze/factory/mazefactory_aldousbroder.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/maze/factory/mazefactory_binarytree.py" afterPath="$PROJECT_DIR$/src/maze/factory/mazefactory_binarytree.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/maze/factory/mazefactory_huntandkill.py" afterPath="$PROJECT_DIR$/src/maze/factory/mazefactory_huntandkill.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/maze/factory/mazefactory_sidewinder.py" afterPath="$PROJECT_DIR$/src/maze/factory/mazefactory_sidewinder.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/maze/factory/mazefactory_wilson.py" afterPath="$PROJECT_DIR$/src/maze/factory/mazefactory_wilson.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/maze/renderer/ortho_mazerenderer.py" afterPath="$PROJECT_DIR$/src/maze/renderer/ortho_mazerenderer.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/start/mazes_dialog.py" afterPath="$PROJECT_DIR$/src/start/mazes_dialog.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/mazehelper_test.py" afterPath="$PROJECT_DIR$/src/test/mazehelper_test.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/start/__init__.py" afterPath="$PROJECT_DIR$/src/start/__init__.py" />
     </list>
     <ignored path="PyMazes.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -34,7 +24,20 @@
     <favorites_list name="PyMazes" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="start.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/start/start.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="690">
+              <caret line="46" column="105" selection-start-line="46" selection-start-column="105" selection-end-line="46" selection-end-column="105" />
+              <folding>
+                <element signature="e#0#39#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -187,86 +190,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PyMazes" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PyMazes" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="start" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PyMazes" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PyMazes" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="maze" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PyMazes" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PyMazes" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="maze" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="renderer" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PyMazes" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PyMazes" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="maze" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="factory" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -628,7 +551,14 @@
       <option name="project" value="LOCAL" />
       <updated>1467053402208</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="some great refactoring">
+      <created>1467309875593</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1467309875593</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -676,7 +606,7 @@
     <frame x="0" y="24" width="1920" height="993" extended-state="6" />
     <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1960991" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1960991" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32998884" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.40369087" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -734,7 +664,8 @@
     <MESSAGE value="refactored main dialog" />
     <MESSAGE value="changed row_idx and col_idx order in maze.cell" />
     <MESSAGE value="improved cellrenderer" />
-    <option name="LAST_COMMIT_MESSAGE" value="improved cellrenderer" />
+    <MESSAGE value="some great refactoring" />
+    <option name="LAST_COMMIT_MESSAGE" value="some great refactoring" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -776,7 +707,7 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/start/mazes_dialog.py">
+    <entry file="file://$PROJECT_DIR$/src/start/start.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="525">
           <caret line="46" column="105" selection-start-line="46" selection-start-column="105" selection-end-line="46" selection-end-column="105" />
@@ -824,7 +755,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/start/mazes_dialog.py">
+    <entry file="file://$PROJECT_DIR$/src/start/start.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -862,7 +793,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/start/mazes_dialog.py">
+    <entry file="file://$PROJECT_DIR$/src/start/start.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="510">
           <caret line="43" column="0" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
@@ -906,7 +837,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/start/mazes_dialog.py">
+    <entry file="file://$PROJECT_DIR$/src/start/start.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -1091,16 +1022,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/start/mazes_dialog.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="46" column="105" selection-start-line="46" selection-start-column="105" selection-end-line="46" selection-end-column="105" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/algorithm/mazealgorithmtype.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
@@ -1124,6 +1045,16 @@
         <state relative-caret-position="45">
           <caret line="7" column="6" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/start/start.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="690">
+          <caret line="46" column="105" selection-start-line="46" selection-start-column="105" selection-end-line="46" selection-end-column="105" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

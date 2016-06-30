@@ -2,7 +2,7 @@ import sys
 
 from PyQt5 import QtWidgets
 
-from src.start.mazes_dialog import PyMazesDialog
+from src.start.start import PyMazesDialog
 
 
 app = QtWidgets.QApplication(sys.argv)
