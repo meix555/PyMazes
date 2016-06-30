@@ -2,7 +2,7 @@ import random
 
 from src.maze.factory.abstractmazefactory import AbstractMazeFactory
 from ..maze import *
-from ..mazehelper import *
+from ..ortho_mazehelper import *
 
 
 class MazeFactoryAldousBroder(AbstractMazeFactory):

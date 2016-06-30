@@ -2,7 +2,7 @@ from src.maze.abstract_maze_helper import AbstractMazeHelper
 from src.maze.factory.mask_factory import MaskFactory
 from .abstractmazefactory import AbstractMazeFactory
 from ..maze import *
-from ..mazehelper import *
+from ..ortho_mazehelper import *
 
 
 class MazeFactoryHuntAndKill(AbstractMazeFactory):

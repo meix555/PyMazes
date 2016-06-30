@@ -1,10 +1,10 @@
 from src.maze.renderer.abstract_mazerenderer import AbstractMazeRenderer
-from .cellrenderer import CellRenderer
+from .ortho_cellrenderer import OrthoCellRenderer
 
 
 class OrthoMazeRenderer(AbstractMazeRenderer):
     def __init__(self, painter, base_x, base_y, cell_size):
-        self.cellrenderer = CellRenderer(painter, base_x, base_y, cell_size)
+        self.cellrenderer = OrthoCellRenderer(painter, base_x, base_y, cell_size)
 
 
     def render_maze(self, maze):

@@ -5,7 +5,7 @@ from .walltype import *
 from .wallorientation import *
 
 
-class MazeHelper(AbstractMazeHelper):
+class OrthoMazeHelper(AbstractMazeHelper):
     @staticmethod
     def erase_wall(maze, row_idx, col_idx, orientation):
         maze.cells[row_idx][col_idx].set_walltype(orientation, WallType.OPEN)
@@ -34,8 +34,8 @@ class MazeHelper(AbstractMazeHelper):
 
     @staticmethod
     def erase_wall_between_cells(maze, cell1, cell2):
-        orientation = MazeHelper.get_wall_orientation(cell1, cell2)
-        MazeHelper.erase_wall(maze, cell1.row_idx, cell1.col_idx, orientation)
+        orientation = OrthoMazeHelper.get_wall_orientation(cell1, cell2)
+        OrthoMazeHelper.erase_wall(maze, cell1.row_idx, cell1.col_idx, orientation)
 
 
     # masking! => OK
@@ -100,7 +100,7 @@ class MazeHelper(AbstractMazeHelper):
     # masking nicht nötig!
     @staticmethod
     def get_random_neighbourcell(maze, cell):
-        neighbourcells = MazeHelper.get_neighbourcells_list(maze, cell)
+        neighbourcells = OrthoMazeHelper.get_neighbourcells_list(maze, cell)
 
         return neighbourcells[random.randint(0, len(neighbourcells) - 1)]
 
@@ -108,7 +108,7 @@ class MazeHelper(AbstractMazeHelper):
     # masking nicht nötig!
     @staticmethod
     def get_unvisited_random_neighbourcell(maze, cell, visited):
-        neighbourcells = MazeHelper.get_neighbourcells_list(maze, cell)
+        neighbourcells = OrthoMazeHelper.get_neighbourcells_list(maze, cell)
 
         unvisitedcells = [cell for cell in neighbourcells if not visited[cell.row_idx][cell.col_idx]]
 
@@ -122,7 +122,7 @@ class MazeHelper(AbstractMazeHelper):
     # masking nicht nötig!
     @staticmethod
     def get_visited_random_neighbourcell(maze, cell, visited):
-        neighbourcells = MazeHelper.get_neighbourcells_list(maze, cell)
+        neighbourcells = OrthoMazeHelper.get_neighbourcells_list(maze, cell)
 
         visitedcells = [cell for cell in neighbourcells if visited[cell.row_idx][cell.col_idx]]
 
@@ -158,7 +158,7 @@ class MazeHelper(AbstractMazeHelper):
         found = False
 
         while not found:
-            cell = MazeHelper.get_randomcell(maze)
+            cell = OrthoMazeHelper.get_randomcell(maze)
             found = not visited[cell.row_idx][cell.col_idx]
 
         return cell

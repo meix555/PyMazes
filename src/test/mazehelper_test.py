@@ -1,7 +1,7 @@
 import unittest
 
 from src.maze.maze import Maze
-from src.maze.mazehelper import MazeHelper
+from src.maze.ortho_mazehelper import OrthoMazeHelper
 
 
 class MazeHelperTest(unittest.TestCase):
@@ -10,5 +10,5 @@ class MazeHelperTest(unittest.TestCase):
 
 
     def test_cellcount(self):
-        cellcount = MazeHelper.get_cellcount(self.maze)
+        cellcount = OrthoMazeHelper.get_cellcount(self.maze)
         self.assertEqual(cellcount, 9, "wrong cell count")

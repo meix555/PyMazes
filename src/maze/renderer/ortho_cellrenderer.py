@@ -2,7 +2,7 @@ from ..walltype import *
 from ..wallorientation import *
 
 
-class CellRenderer(object):
+class OrthoCellRenderer(object):
     def __init__(self, painter, base_x, base_y, cell_size):
         self.painter = painter
         self.base_x = base_x

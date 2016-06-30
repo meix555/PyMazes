@@ -1,6 +1,6 @@
 from src.maze.factory.abstractmazefactory import AbstractMazeFactory
 from ..maze import *
-from ..mazehelper import *
+from ..ortho_mazehelper import *
 from ..wallorientation import *
 import random
 
@@ -28,10 +28,10 @@ class MazeFactorySidewinder(AbstractMazeFactory):
                 run.append(col_idx)
 
                 if (col_idx < maze.maze_width - 1) and self.erase_east():
-                    MazeHelper.erase_wall(maze, row_idx, col_idx, WallOrientation.EAST)
+                    OrthoMazeHelper.erase_wall(maze, row_idx, col_idx, WallOrientation.EAST)
                 else:
                     random_idx = random.randint(0, len(run) - 1)
-                    MazeHelper.erase_wall(maze, row_idx, run[random_idx], WallOrientation.NORTH)
+                    OrthoMazeHelper.erase_wall(maze, row_idx, run[random_idx], WallOrientation.NORTH)
                     run.clear()
 
         return maze

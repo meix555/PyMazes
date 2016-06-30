@@ -6,7 +6,7 @@ from src.maze.factory.mazefactory_binarytree import MazeFactoryBinaryTree
 from src.maze.factory.mazefactory_huntandkill import MazeFactoryHuntAndKill
 from src.maze.factory.mazefactory_sidewinder import MazeFactorySidewinder
 from src.maze.factory.mazefactory_wilson import MazeFactoryWilson
-from src.maze.mazehelper import MazeHelper
+from src.maze.ortho_mazehelper import OrthoMazeHelper
 from src.maze.renderer.ortho_mazerenderer import OrthoMazeRenderer
 from src.maze.renderer.point2d import Point2D
 from src.maze.renderer.polar_mazerenderer import PolarMazeRenderer
@@ -76,10 +76,10 @@ class PyMazesDialog(QtWidgets.QDialog):
 
 
     def create_factorylist(self):
-        factories = [MazeFactoryBinaryTree(MazeHelper), MazeFactorySidewinder(MazeHelper),
-                     MazeFactoryAldousBroder(MazeHelper),
-                     MazeFactoryWilson(MazeHelper), MazeFactoryHuntAndKill(MazeHelper),
-                     MazeFactoryHuntAndKill(MazeHelper), MazeFactoryEmptyMaze(MazeHelper),
-                     MazeFactoryEmptyMaze(MazeHelper)]
+        factories = [MazeFactoryBinaryTree(OrthoMazeHelper), MazeFactorySidewinder(OrthoMazeHelper),
+                     MazeFactoryAldousBroder(OrthoMazeHelper),
+                     MazeFactoryWilson(OrthoMazeHelper), MazeFactoryHuntAndKill(OrthoMazeHelper),
+                     MazeFactoryHuntAndKill(OrthoMazeHelper), MazeFactoryEmptyMaze(OrthoMazeHelper),
+                     MazeFactoryEmptyMaze(OrthoMazeHelper)]
 
         return factories
