@@ -4,6 +4,8 @@ from PyQt5.QtCore import QRectF
 
 from src.maze.renderer.abstract_mazerenderer import AbstractMazeRenderer
 from src.maze.renderer.point2d import Point2D
+from src.maze.wallorientation import WallOrientation
+from src.maze.walltype import WallType
 
 
 class PolarMazeRenderer(AbstractMazeRenderer):
@@ -34,6 +36,9 @@ class PolarMazeRenderer(AbstractMazeRenderer):
                                    2 * inner_radius, 2 * inner_radius)
 
             for col_idx in range(len(maze.cells[row_idx])):
+
+                cell = maze.cells[row_idx][col_idx]
+
                 theta_cw = (col_idx + 1) * theta
                 arc_theta_ccw = col_idx * arc_theta
 
@@ -42,9 +47,11 @@ class PolarMazeRenderer(AbstractMazeRenderer):
                 dx = self.center.x + outer_radius * math.cos(theta_cw)
                 dy = self.center.y + outer_radius * math.sin(theta_cw)
 
-                # TODO: draw only if there is a wall
-                self.painter.drawArc(arc_rectangle, arc_theta_ccw, arc_theta)
-                self.painter.drawLine(cx, cy, dx, dy)
+                if cell.walltypes[WallOrientation.NORTH] == WallType.WALL:
+                    self.painter.drawArc(arc_rectangle, arc_theta_ccw, arc_theta)
+
+                if cell.walltypes[WallOrientation.EAST] == WallType.WALL:
+                    self.painter.drawLine(cx, cy, dx, dy)
 
         # draw outer circle
         outer_radius = len(maze.cells) * self.ring_size
