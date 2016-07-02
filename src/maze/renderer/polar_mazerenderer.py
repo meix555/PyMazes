@@ -1,61 +1,53 @@
-from src.maze.renderer.abstract_mazerenderer import AbstractMazeRenderer
+import math
 
 from PyQt5.QtCore import QRectF
 
-from math import pi as PI
-from math import cos
-from math import sin
+from src.maze.renderer.abstract_mazerenderer import AbstractMazeRenderer
+from src.maze.renderer.point2d import Point2D
 
 
 class PolarMazeRenderer(AbstractMazeRenderer):
-    def __init__(self, painter, center, ring_size):
+    CENTER_DELTA = 70
+    ARC_WHOLE_CIRCLE = 16 * 360
+
+
+    def __init__(self, painter, ring_size):
         self.painter = painter
-        self.center = center
+        self.center = None
         self.ring_size = ring_size
-        print('init')
 
 
     def render_maze(self, maze):
 
-        # self.painter.drawEllipse(self.center.x, self.center.y, self.ring_size, self.ring_size)
+        center = self.CENTER_DELTA + len(maze.cells) * self.ring_size
+        self.center = Point2D(center, center)
 
-        for row_idx in range(len(maze.cells)):  # maze.maze_height
+        for row_idx in range(len(maze.cells)):
 
             cell_count = len(maze.cells[row_idx])
-            theta = 2 * PI / cell_count
+            theta = 2 * math.pi / cell_count
             inner_radius = row_idx * self.ring_size
             outer_radius = (row_idx + 1) * self.ring_size
 
-            theta_stupid = 16 * 360 / cell_count
-
-            rectangle = QRectF(self.center.x - outer_radius,
-                               self.center.y - outer_radius,
-                               2 * outer_radius,
-                               2 * outer_radius)
+            arc_theta = self.ARC_WHOLE_CIRCLE / cell_count
+            arc_rectangle = QRectF(self.center.x - inner_radius, self.center.y - inner_radius,
+                                   2 * inner_radius, 2 * inner_radius)
 
             for col_idx in range(len(maze.cells[row_idx])):
-                print('drawing cell {}:'.format(col_idx))
-
-                theta_ccw = col_idx * theta
                 theta_cw = (col_idx + 1) * theta
+                arc_theta_ccw = col_idx * arc_theta
 
-                theta_stupid_ccw = col_idx * theta_stupid
-                theta_stupid_cw = (col_idx + 1) * theta_stupid
+                cx = self.center.x + inner_radius * math.cos(theta_cw)
+                cy = self.center.y + inner_radius * math.sin(theta_cw)
+                dx = self.center.x + outer_radius * math.cos(theta_cw)
+                dy = self.center.y + outer_radius * math.sin(theta_cw)
 
-                ax = self.center.x + inner_radius * cos(theta_ccw)
-                ay = self.center.y + inner_radius * sin(theta_ccw)
-                bx = self.center.x + outer_radius * cos(theta_ccw)
-                by = self.center.y + outer_radius * sin(theta_ccw)
-                cx = self.center.x + inner_radius * cos(theta_cw)
-                cy = self.center.y + inner_radius * sin(theta_cw)
-                dx = self.center.x + outer_radius * cos(theta_cw)
-                dy = self.center.y + outer_radius * sin(theta_cw)
-
-                # self.painter.drawLine(ax, ay, cx, cy)
-                self.painter.drawArc(rectangle, theta_stupid_ccw, theta_stupid)
+                # TODO: draw only if there is a wall
+                self.painter.drawArc(arc_rectangle, arc_theta_ccw, arc_theta)
                 self.painter.drawLine(cx, cy, dx, dy)
 
-                if row_idx == maze.maze_height - 1:
-                    # self.painter.drawLine(bx, by, dx, dy)
-                    # self.painter.drawRect(rectangle)
-                    self.painter.drawArc(rectangle, theta_stupid_ccw, theta_stupid)
+        # draw outer circle
+        outer_radius = len(maze.cells) * self.ring_size
+        arc_rectangle = QRectF(self.center.x - outer_radius, self.center.y - outer_radius,
+                               2 * outer_radius, 2 * outer_radius)
+        self.painter.drawArc(arc_rectangle, 0, self.ARC_WHOLE_CIRCLE)

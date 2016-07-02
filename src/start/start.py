@@ -8,7 +8,6 @@ from src.maze.factory.mazefactory_sidewinder import MazeFactorySidewinder
 from src.maze.factory.mazefactory_wilson import MazeFactoryWilson
 from src.maze.ortho_mazehelper import OrthoMazeHelper
 from src.maze.renderer.ortho_mazerenderer import OrthoMazeRenderer
-from src.maze.renderer.point2d import Point2D
 from src.maze.renderer.polar_mazerenderer import PolarMazeRenderer
 
 
@@ -45,7 +44,7 @@ class PyMazesDialog(QtWidgets.QDialog):
                 maze_renderer = OrthoMazeRenderer(self.get_painter(), self.base_x, self.base_y, self.CELL_SIZE,
                                                   self.maze.maze_height)
             else:
-                maze_renderer = PolarMazeRenderer(self.get_painter(), Point2D(200, 200), self.CELL_SIZE)
+                maze_renderer = PolarMazeRenderer(self.get_painter(), self.CELL_SIZE)
             maze_renderer.render_maze(self.maze);
 
 
