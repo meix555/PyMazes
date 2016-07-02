@@ -3,11 +3,12 @@ from ..wallorientation import *
 
 
 class OrthoCellRenderer(object):
-    def __init__(self, painter, base_x, base_y, cell_size):
+    def __init__(self, painter, base_x, base_y, cell_size, maze_height):
         self.painter = painter
         self.base_x = base_x
         self.base_y = base_y
         self.cell_size = cell_size
+        self.max_row_idx = maze_height - 1
 
 
     def render(self, cell):
@@ -18,7 +19,7 @@ class OrthoCellRenderer(object):
         if cell.masked:
             self.painter.drawRect(cell_base_x, cell_base_y, self.cell_size, self.cell_size)
 
-        if cell.walltypes[WallOrientation.NORTH] == WallType.WALL and cell.row_idx == 0:
+        if cell.walltypes[WallOrientation.NORTH] == WallType.WALL:
             self.painter.drawLine(cell_base_x, cell_base_y, cell_base_x + self.cell_size, cell_base_y)
 
         if cell.walltypes[WallOrientation.WEST] == WallType.WALL and cell.col_idx == 0:
@@ -28,6 +29,6 @@ class OrthoCellRenderer(object):
             self.painter.drawLine(cell_base_x + self.cell_size, cell_base_y, cell_base_x + self.cell_size,
                                   cell_base_y + self.cell_size)
 
-        if cell.walltypes[WallOrientation.SOUTH] == WallType.WALL:
+        if cell.walltypes[WallOrientation.SOUTH] == WallType.WALL and cell.row_idx == self.max_row_idx:
             self.painter.drawLine(cell_base_x + self.cell_size, cell_base_y + self.cell_size, cell_base_x,
                                   cell_base_y + self.cell_size)

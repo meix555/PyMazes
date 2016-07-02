@@ -3,8 +3,8 @@ from .ortho_cellrenderer import OrthoCellRenderer
 
 
 class OrthoMazeRenderer(AbstractMazeRenderer):
-    def __init__(self, painter, base_x, base_y, cell_size):
-        self.cellrenderer = OrthoCellRenderer(painter, base_x, base_y, cell_size)
+    def __init__(self, painter, base_x, base_y, cell_size, maze_height):
+        self.cellrenderer = OrthoCellRenderer(painter, base_x, base_y, cell_size, maze_height)
 
 
     def render_maze(self, maze):

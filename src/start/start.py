@@ -42,9 +42,10 @@ class PyMazesDialog(QtWidgets.QDialog):
         if self.draw:
             maze_renderer = None
             if self.selection_index < 7:
-                maze_renderer = OrthoMazeRenderer(self.get_painter(), self.base_x, self.base_y, self.CELL_SIZE)
+                maze_renderer = OrthoMazeRenderer(self.get_painter(), self.base_x, self.base_y, self.CELL_SIZE,
+                                                  self.maze.maze_height)
             else:
-                maze_renderer = PolarMazeRenderer(self.get_painter(), Point2D(200, 200), self.CELL_SIZE*2)
+                maze_renderer = PolarMazeRenderer(self.get_painter(), Point2D(200, 200), self.CELL_SIZE)
             maze_renderer.render_maze(self.maze);
 
 
