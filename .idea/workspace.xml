@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="90ebcf24-5f1d-44cd-9835-78940a8327ac" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/maze/renderer/polar_mazerenderer.py" afterPath="$PROJECT_DIR$/src/maze/renderer/polar_mazerenderer.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/maze/ortho_mazehelper.py" afterPath="$PROJECT_DIR$/src/maze/ortho_mazehelper.py" />
     </list>
     <ignored path="PyMazes.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -36,11 +36,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="polar_mazerenderer.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="polar_mazerenderer.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/maze/renderer/polar_mazerenderer.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="420">
-              <caret line="49" column="52" selection-start-line="49" selection-start-column="52" selection-end-line="49" selection-end-column="52" />
+            <state relative-caret-position="300">
+              <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
               <folding>
                 <element signature="e#0#11#0" expanded="true" />
               </folding>
@@ -72,11 +72,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ortho_mazehelper.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="ortho_mazehelper.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/maze/ortho_mazehelper.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="2130">
+              <caret line="146" column="17" selection-start-line="146" selection-start-column="17" selection-end-line="146" selection-end-column="17" />
               <folding />
             </state>
           </provider>
@@ -139,11 +139,11 @@
         <option value="$PROJECT_DIR$/src/maze/factory/mazefactory_huntandkill.py" />
         <option value="$PROJECT_DIR$/src/maze/factory/mazefactory_aldousbroder.py" />
         <option value="$PROJECT_DIR$/src/maze/renderer/cellrenderer.py" />
-        <option value="$PROJECT_DIR$/src/maze/ortho_mazehelper.py" />
         <option value="$PROJECT_DIR$/src/maze/renderer/ortho_mazerenderer.py" />
         <option value="$PROJECT_DIR$/src/maze/renderer/ortho_cellrenderer.py" />
         <option value="$PROJECT_DIR$/src/start/start.py" />
         <option value="$PROJECT_DIR$/src/maze/renderer/polar_mazerenderer.py" />
+        <option value="$PROJECT_DIR$/src/maze/ortho_mazehelper.py" />
       </list>
     </option>
   </component>
@@ -672,7 +672,14 @@
       <option name="project" value="LOCAL" />
       <updated>1467481375002</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="PolarMazeRenderer another nice version">
+      <created>1467482011141</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1467482011141</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -762,7 +769,8 @@
     <MESSAGE value="some great refactoring" />
     <MESSAGE value="PolarMazeRenderer first stupid version" />
     <MESSAGE value="PolarMazeRenderer first nice version" />
-    <option name="LAST_COMMIT_MESSAGE" value="PolarMazeRenderer first nice version" />
+    <MESSAGE value="PolarMazeRenderer another nice version" />
+    <option name="LAST_COMMIT_MESSAGE" value="PolarMazeRenderer another nice version" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -776,12 +784,6 @@
           <url>file://$PROJECT_DIR$/src/test/mask_factory_test.py</url>
           <line>23</line>
           <option name="timeStamp" value="49" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="python-line">
-          <condition expression="cell.masked" language="Python" />
-          <url>file://$PROJECT_DIR$/src/maze/ortho_mazehelper.py</url>
-          <line>161</line>
-          <option name="timeStamp" value="53" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="python-line">
           <url>file://$PROJECT_DIR$/src/maze/factory/mazefactory_wilson.py</url>
@@ -1133,14 +1135,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/maze/ortho_mazehelper.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/maze/renderer/ortho_cellrenderer.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
@@ -1153,11 +1147,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/maze/renderer/polar_mazerenderer.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="49" column="52" selection-start-line="49" selection-start-column="52" selection-end-line="49" selection-end-column="52" />
+        <state relative-caret-position="300">
+          <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
           <folding>
             <element signature="e#0#11#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/maze/ortho_mazehelper.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2130">
+          <caret line="146" column="17" selection-start-line="146" selection-start-column="17" selection-end-line="146" selection-end-column="17" />
+          <folding />
         </state>
       </provider>
     </entry>

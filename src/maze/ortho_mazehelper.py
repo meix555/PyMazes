@@ -38,7 +38,6 @@ class OrthoMazeHelper(AbstractMazeHelper):
         OrthoMazeHelper.erase_wall(maze, cell1.row_idx, cell1.col_idx, orientation)
 
 
-    # masking! => OK
     @staticmethod
     def get_randomcell(maze):
 
@@ -53,7 +52,6 @@ class OrthoMazeHelper(AbstractMazeHelper):
         return cell
 
 
-    # masking!
     @staticmethod
     def get_neighbourcells_dict(maze, cell):
 
@@ -74,7 +72,6 @@ class OrthoMazeHelper(AbstractMazeHelper):
         return cells
 
 
-    # masking!
     @staticmethod
     def get_neighbourcells_list(maze, cell):
 
@@ -97,7 +94,6 @@ class OrthoMazeHelper(AbstractMazeHelper):
         return unmasked_cells
 
 
-    # masking nicht nötig!
     @staticmethod
     def get_random_neighbourcell(maze, cell):
         neighbourcells = OrthoMazeHelper.get_neighbourcells_list(maze, cell)
@@ -105,7 +101,6 @@ class OrthoMazeHelper(AbstractMazeHelper):
         return neighbourcells[random.randint(0, len(neighbourcells) - 1)]
 
 
-    # masking nicht nötig!
     @staticmethod
     def get_unvisited_random_neighbourcell(maze, cell, visited):
         neighbourcells = OrthoMazeHelper.get_neighbourcells_list(maze, cell)
@@ -119,7 +114,6 @@ class OrthoMazeHelper(AbstractMazeHelper):
             return None
 
 
-    # masking nicht nötig!
     @staticmethod
     def get_visited_random_neighbourcell(maze, cell, visited):
         neighbourcells = OrthoMazeHelper.get_neighbourcells_list(maze, cell)
@@ -150,7 +144,6 @@ class OrthoMazeHelper(AbstractMazeHelper):
         return orientation
 
 
-    # masking nicht nötig!
     @staticmethod
     def find_random_unvisited_cell(maze, visited):
         cell = None
