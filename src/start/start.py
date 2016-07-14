@@ -1,6 +1,6 @@
 from PyQt5 import QtWidgets, QtGui, uic
 
-from src.maze.factory.maze_factory_empty_maze import MazeFactoryEmptyMaze
+from src.maze.factory.maze_factory_empty_maze import PolarMazeFactory
 from src.maze.factory.mazefactory_aldousbroder import MazeFactoryAldousBroder
 from src.maze.factory.mazefactory_binarytree import MazeFactoryBinaryTree
 from src.maze.factory.mazefactory_huntandkill import MazeFactoryHuntAndKill
@@ -9,6 +9,8 @@ from src.maze.factory.mazefactory_wilson import MazeFactoryWilson
 from src.maze.ortho_mazehelper import OrthoMazeHelper
 from src.maze.renderer.ortho_mazerenderer import OrthoMazeRenderer
 from src.maze.renderer.polar_mazerenderer import PolarMazeRenderer
+
+import pickle
 
 
 class PyMazesDialog(QtWidgets.QDialog):
@@ -36,6 +38,8 @@ class PyMazesDialog(QtWidgets.QDialog):
 
         self.selection_index = 0
 
+        self.save_name = 'maze_dump.p'
+
 
     def paintEvent(self, event):
         if self.draw:
@@ -62,6 +66,10 @@ class PyMazesDialog(QtWidgets.QDialog):
         else:
             self.maze = mazefactory.create_maze(width, height)
 
+        # pickle.dump(self.maze, open(self.save_name, 'wb'))
+
+        # maze2 = pickle.load(open(self.save_name, 'rb'))
+
         self.draw = True
 
         self.update()
@@ -79,7 +87,7 @@ class PyMazesDialog(QtWidgets.QDialog):
         factories = [MazeFactoryBinaryTree(OrthoMazeHelper), MazeFactorySidewinder(OrthoMazeHelper),
                      MazeFactoryAldousBroder(OrthoMazeHelper),
                      MazeFactoryWilson(OrthoMazeHelper), MazeFactoryHuntAndKill(OrthoMazeHelper),
-                     MazeFactoryHuntAndKill(OrthoMazeHelper), MazeFactoryEmptyMaze(OrthoMazeHelper),
-                     MazeFactoryEmptyMaze(OrthoMazeHelper)]
+                     MazeFactoryHuntAndKill(OrthoMazeHelper), PolarMazeFactory(OrthoMazeHelper),
+                     PolarMazeFactory(OrthoMazeHelper)]
 
         return factories
