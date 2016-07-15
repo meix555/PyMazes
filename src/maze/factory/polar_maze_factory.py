@@ -21,8 +21,8 @@ class PolarMazeFactory(AbstractMazeFactory):
         self.visited = [[False for _1 in range(len(self.maze.cells[row_idx]))] for row_idx in range(maze_height)]
 
         current_cell = self.mazehelper.find_random_unvisited_cell(self.maze, self.visited)
-        print('------------------------------------')
-        self.print_cell('current_cell', current_cell)
+        # print('------------------------------------')
+        # self.print_cell('current_cell', current_cell)
 
         while current_cell:
             self.visited[current_cell.row_idx][current_cell.col_idx] = True
@@ -34,9 +34,9 @@ class PolarMazeFactory(AbstractMazeFactory):
 
 
     def compute_path(self, start_cell):
-        print('Starting compute_path...')
+        # print('Starting compute_path...')
         current_cell = start_cell
-        self.print_cell('current_cell', current_cell)
+        # self.print_cell('current_cell', current_cell)
         path_complete = False
 
         testcounter = 1
@@ -45,7 +45,7 @@ class PolarMazeFactory(AbstractMazeFactory):
             neighbour_cell = self.mazehelper.get_unvisited_random_neighbourcell(self.maze, current_cell, self.visited)
 
             if neighbour_cell:
-                self.print_cell('neighbour_cell', neighbour_cell)
+                # self.print_cell('neighbour_cell', neighbour_cell)
                 self.visited[neighbour_cell.row_idx][neighbour_cell.col_idx] = True
                 self.mazehelper.erase_wall_between_cells(self.maze, current_cell, neighbour_cell)
                 testcounter += 1
@@ -58,7 +58,7 @@ class PolarMazeFactory(AbstractMazeFactory):
 
 
     def hunt(self):
-        print('Starting hunt...')
+        # print('Starting hunt...')
         unvisited_cell, visited_neighbour_cell = self.hunt_for_unvisited_cell_with_visited_neighbour()
 
         if unvisited_cell and visited_neighbour_cell:

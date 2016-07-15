@@ -61,7 +61,7 @@
      </rect>
     </property>
     <property name="text">
-     <string>8</string>
+     <string>20</string>
     </property>
    </widget>
    <widget class="QLineEdit" name="heightEdit">
@@ -123,7 +123,7 @@
     </item>
     <item>
      <property name="text">
-      <string>Empty maze round</string>
+      <string>Hunt and Kill round</string>
      </property>
     </item>
    </widget>

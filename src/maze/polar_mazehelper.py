@@ -22,19 +22,19 @@ class PolarMazeHelper(AbstractMazeHelper):
         # PolarMazeHelper.print_cell('cell2', cell2)
 
         if cell1.cw == cell2:
-            print('  erasing cw')
+            # print('  erasing cw')
             cell1.cw = None
 
         if cell1.ccw == cell2:
-            print('  erasing ccw')
+            # print('  erasing ccw')
             cell1.ccw = None
 
         if cell1.inward == cell2:
-            print('  erasing inward')
+            # print('  erasing inward')
             cell1.inward = None
 
         if cell2 in cell1.outward:
-            print('  erasing outward')
+            # print('  erasing outward')
             cell1.outward.remove(cell2)
 
 
