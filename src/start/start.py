@@ -1,12 +1,13 @@
 from PyQt5 import QtWidgets, QtGui, uic
 
-from src.maze.factory.maze_factory_empty_maze import PolarMazeFactory
+from src.maze.factory.polar_maze_factory import PolarMazeFactory
 from src.maze.factory.mazefactory_aldousbroder import MazeFactoryAldousBroder
 from src.maze.factory.mazefactory_binarytree import MazeFactoryBinaryTree
 from src.maze.factory.mazefactory_huntandkill import MazeFactoryHuntAndKill
 from src.maze.factory.mazefactory_sidewinder import MazeFactorySidewinder
 from src.maze.factory.mazefactory_wilson import MazeFactoryWilson
 from src.maze.ortho_mazehelper import OrthoMazeHelper
+from src.maze.polar_mazehelper import PolarMazeHelper
 from src.maze.renderer.ortho_mazerenderer import OrthoMazeRenderer
 from src.maze.renderer.polar_mazerenderer import PolarMazeRenderer
 
@@ -50,6 +51,7 @@ class PyMazesDialog(QtWidgets.QDialog):
             else:
                 maze_renderer = PolarMazeRenderer(self.get_painter(), self.CELL_SIZE)
             maze_renderer.render_maze(self.maze);
+            # self.draw = False
 
 
     def onDraw(self):
@@ -88,6 +90,6 @@ class PyMazesDialog(QtWidgets.QDialog):
                      MazeFactoryAldousBroder(OrthoMazeHelper),
                      MazeFactoryWilson(OrthoMazeHelper), MazeFactoryHuntAndKill(OrthoMazeHelper),
                      MazeFactoryHuntAndKill(OrthoMazeHelper), PolarMazeFactory(OrthoMazeHelper),
-                     PolarMazeFactory(OrthoMazeHelper)]
+                     PolarMazeFactory(PolarMazeHelper)]
 
         return factories
